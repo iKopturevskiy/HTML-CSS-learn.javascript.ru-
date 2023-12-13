@@ -1,0 +1,21 @@
+@import "../../assets/css/variables";
+
+.preview {
+    background-color: #F9FAFC;
+    padding: 4.25rem 0;
+
+    @media screen and (max-width: 768px) {
+            padding: 0;
+    }
+
+    &__cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(164px, 1fr));
+        grid-gap: 1rem;
+        place-items: center;
+
+        @media screen and (min-width: 576px) {
+                grid-template-columns: repeat(3, 1fr);
+        }
+    }
+}

@@ -1,0 +1,10 @@
+@import "../../assets/css/variables";
+
+.container {
+    max-width: 1110px;
+    margin: 0 auto;
+
+    &__title {
+        @include text(var(--grey-3), 20px, normal, 400, 26px);
+    }
+}

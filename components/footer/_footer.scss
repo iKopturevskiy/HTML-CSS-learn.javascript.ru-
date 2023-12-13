@@ -1,0 +1,16 @@
+@import "../../assets/css/variables";
+
+.footer {
+    @include text(var(--grey-3, #ACB5BD), 12px, normal, 500, 18px);
+    letter-spacing: 0.48px;
+    text-transform: uppercase;
+    text-align: center;
+
+    @media screen and (max-width: 768px) {
+            display: none;
+    }
+
+    &_transparent-background {
+        background: var(--tranparent);
+    }
+}
