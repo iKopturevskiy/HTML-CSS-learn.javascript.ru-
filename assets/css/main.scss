@@ -1,0 +1,56 @@
+@import '../fonts/fonts';
+
+//@import "../../components/page/page.css";
+//@import "../../components/header/header.css";
+//@import "../../components/footer/footer.css";
+//@import "../../components/preview/preview.css";
+//@import "../../components/container/container.css";
+//@import "../../components/card/card.css";
+//@import "../../components/aside/aside.css";
+//@import "../../components/info/info.css";
+
+@import "../../03-lection1/01-button/_button.scss";
+@import "../../03-lection1/02-accordion/_accordion.scss";
+@import "../../04-lection2/02-skeleton/_skeleton.scss";
+@import "../../04-lection2/01-histogram/_histogram.scss";
+@import "../../05-lection3/01-tooltip/_tooltip.scss";
+@import "../../05-lection3/02-modal/_modal.scss";
+@import "../../05-lection3/03-calendar/_calendar.scss";
+@import "../../06-lection4/01-avatar/_avatar.scss";
+@import "../../07-lection5/01-checkbox/_checkbox.scss";
+@import "../../07-lection5/02-radio/_radio.scss";
+@import "../../07-lection5/03-toggler/_toggler.scss";
+@import "../../07-lection5/04-input/_input.scss";
+@import "../../09-lection7/01-burger-menu/_burger-menu.scss";
+
+:root {
+    --white: #ffffff;
+    --black: #212429;
+    --pink: #F784AD;
+    --purple: #7048E8;
+    --blue: #374FC7;
+    --red: #F03D3E;
+    --grey-1: #F8F9FA;
+    --grey-2: #DDE2E5;
+    --grey-3: #ACB5BD;
+    --grey-4: #495057;
+    --tranparent: rgba(0, 0, 0, 0);
+    --primary-hover: #2342C0;
+    --secondary-hover: #5028C6;
+    --gradient: linear-gradient(93deg, #DDE2E5 6.44%, #E2E6E8 38.47%, #F3F5F5 56.48%, #E3E7EA 77.5%, #DDE2E5 102.52%);
+
+    --error: var(--red);
+    --success: var(--blue);
+
+    --primary: var(--blue);
+    --secondary: var(--purple);
+    --transition: opacity 200ms ease-in-out, background 200ms ease-in-out, border 200ms ease-in-out;
+}
+
+html, body {
+    height: 100%;
+}
+
+* {
+    font-family: 'Inter', sans-serif;
+}

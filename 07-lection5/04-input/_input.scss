@@ -1,0 +1,48 @@
+@import "../../assets/css/variables";
+
+.form {
+    &__title {
+        @include text(var(--grey-3), 12px, normal, 500, 18px);
+        letter-spacing: 0.48px;
+        text-transform: uppercase;
+    }
+
+    &__wrapper {
+        position: relative;
+    }
+
+    &__icon {
+        @include positionAndBackground(null, null, absolute, null, null, 16px, 16px);
+        visibility: hidden;
+    }
+
+    &__input {
+        @include widthAndHeight(350px, 56px);
+        @include text(var(--grey-4), 20px, normal, 400, 26px);
+        padding-left: 24px;
+        @include border(1px solid var(--grey-2), 8px, null);
+    }
+
+    &__input:focus {
+        border-color: var(--blue);
+        outline: none;
+    }
+
+    &_success &__icon_success {
+        visibility: visible;
+    }
+
+    &_error &__icon_error {
+        visibility: visible;
+    }
+
+    &_error &__input {
+        border-color: var(--error);
+    }
+
+    &_success &__input:focus,
+    &_error &__input:focus {
+        outline: none;
+        border: 1px solid var(--blue);
+    }
+}

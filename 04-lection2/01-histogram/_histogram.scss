@@ -1,0 +1,30 @@
+@import "../../assets/css/variables";
+
+.histogram {
+    padding: 16px 24px 24px;
+    @include text(var(--black), 16px, normal, 400, 24px);
+    &__top {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__total-orders {}
+    &__title {
+        opacity: 0.8;
+    }
+    &__orders {
+        @include text(null, 20px, null, null, 26px);
+    }
+    &__view {}
+    &__href {}
+    &__bottom {}
+    &__chart {
+        display: flex;
+        gap: 1px;
+        align-items: flex-end;
+        height: 50px;
+    }
+    &__bar {
+        flex: 1;
+        background-color: var(--blue);
+    }
+}

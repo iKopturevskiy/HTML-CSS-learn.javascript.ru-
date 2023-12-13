@@ -1,0 +1,38 @@
+@import "../../assets/css/variables";
+
+.modal {
+    display: none;
+    @include widthAndHeight(100vw, 100vh);
+    margin: 0;
+    @include positionAndBackground(rgba(196, 196, 196, 0.5), null, fixed, 0, 0, null, null);
+
+    &__window {
+        padding: 30px 40px;
+        max-width: 428px;
+        border-radius: 8px;
+        @include positionAndBackground(null, var(--white), absolute, 50%, 50%, null, null);
+        transform: translate(-50%, -50%);
+    }
+
+    &__open {
+        cursor: pointer;
+    }
+
+    &__close {
+        @include positionAndBackground(null, var(--white), absolute, 16px, null, null, 16px);
+        padding: 0;
+        border: 0;
+    }
+
+    &__close:hover {
+        cursor: pointer;
+    }
+
+    &_title {
+        @include text(#334D6E, 20px, normal, 600, 24px);
+    }
+
+    &__text {
+        @include text(var(--grey-4), 16px, normal, 400, 24px);
+    }
+}

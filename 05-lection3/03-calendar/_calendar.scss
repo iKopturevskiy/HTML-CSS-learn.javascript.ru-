@@ -1,0 +1,46 @@
+@import "../../assets/css/variables";
+
+.calendar {
+    @include border(1px solid var(--grey-3), 8px, null);
+    padding: 28px 26px 32px;
+    width: 100%;
+    max-width: 300px;
+
+    &__title {
+        @include text(#334D6E, 20px, normal, 600, 24px);
+        margin-bottom: 24px;
+        text-align: center;
+    }
+
+    &__wrapper {
+        padding-bottom: 100%;
+        position: relative;
+    }
+
+    &__inner {
+        @include positionAndBackground(null, null, absolute, 0, 0, null, 0);
+        bottom: 0;
+        display: grid;
+        grid-template: repeat(7, 1fr)/repeat(7, 1fr);
+    }
+
+    &__item {
+        @include text(null, null, normal, 400, 20px);
+        @include flex(flex, center, center);
+    }
+
+    &__item_day {
+        font-size: 14px;
+        color: #90A0B7;
+    }
+
+    &__item_selected-days {
+        background-color: rgba(160, 177, 245, 0.2);
+    }
+
+    &__item_start-end-date {
+        background: var(--blue);
+        color: white;
+    }
+}
+

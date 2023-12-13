@@ -1,0 +1,49 @@
+@import "../../assets/css/variables";
+
+.button {
+    padding: 15px 50px;
+    height: 48px;
+    border-radius: 8px;
+    text-align: center;
+    transition: var(--transition);
+    @include text(null, 16px, normal, 500, normal);
+
+    /*Primary*/
+    &_primary {
+        background: var(--primary);
+        color: var(--white);
+        border: 1px solid var(--primary);
+    }
+    &_primary:hover {
+        background-color: var(--primary-hover);
+    }
+
+
+    /*Secondary*/
+    &_secondary {
+        background: var(--secondary);
+        color: var(--white);
+        border: 1px solid var(--secondary);
+    }
+    &_secondary:hover {
+        background-color: var(--secondary-hover);
+    }
+
+
+    /*Alternate*/
+    &_alternate {
+        color: var(--grey-4);
+        border: 1px solid var(--grey-3);
+        box-shadow: none;
+    }
+    &_alternate:hover {
+        border-color: var(--black);
+    }
+
+
+    /*Disabled*/
+    &:disabled {
+        pointer-events: none;
+        opacity: 0.5;
+    }
+}

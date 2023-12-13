@@ -1,0 +1,51 @@
+@import "../../assets/css/variables";
+
+.checkbox {
+    display: inline-block;
+
+    &__input {
+        position: absolute;
+        left: -100vw;
+    }
+
+    &__state {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        cursor: pointer;
+    }
+
+    &__control {
+        width: 28px;
+        height: 28px;
+        @include border(1px solid var(--grey-2), 4px, null);
+        @include flex(flex, center, center);
+        box-sizing: border-box;
+    }
+
+    &__title {
+        @include text(var(--grey-4), 16px, normal, 400, 24px);
+    }
+
+    &__input:checked ~ &__state &__control {
+        background-color: var(--blue);
+        border-color: var(--blue);
+    }
+
+    &__input:focus ~ &__state &__title {
+        text-decoration: underline;
+    }
+
+    &__input:disabled ~ &__state &__control {
+        background-color: var(--grey-2);
+        border-color: var(--grey-2);
+    }
+
+    &__input:disabled ~ &__state &__control use{
+        display: none;
+    }
+
+    &__input:disabled ~ &__state &__title {
+        color: var(--grey-2);
+    }
+}

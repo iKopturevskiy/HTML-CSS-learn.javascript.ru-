@@ -1,0 +1,56 @@
+@import "../../assets/css/variables";
+
+.radio {
+    display: inline-block;
+
+
+    &__input {
+        position: absolute;
+        left: -100vw;
+    }
+
+    &__state {
+        @include flex(flex, null, center);
+        gap: 12px;
+        cursor: pointer;
+    }
+
+    &__control {
+        @include widthAndHeight(28px, 28px);
+        @include border(1px solid var(--grey-2), 50%, null);
+        @include flex(flex, center, center);
+        box-sizing: border-box;
+    }
+
+    &__checked {
+        @include widthAndHeight(18px, 18px);
+        @include border(null, 50%, var(--blue));
+        background-color: var(--blue);
+        visibility: hidden;
+    }
+
+    &__title {
+        @include text(var(--grey-4), 16px, normal, 400, 24px);
+    }
+
+    &__input:checked ~ &__state &__control {
+        border: 2px solid var(--blue);
+    }
+
+    &__input:checked ~ &__state &__checked {
+        visibility: visible;
+    }
+
+    &__input:focus ~ &__state &__title {
+        text-decoration: underline;
+    }
+
+    &__input:disabled ~ &__state &__control {
+        background-color: var(--grey-2);
+    }
+
+    &__input:disabled ~ &__state &__title {
+        color: var(--grey-2);
+    }
+}
+

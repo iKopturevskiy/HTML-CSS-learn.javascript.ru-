@@ -1,0 +1,36 @@
+@import "../../assets/css/variables";
+
+.tooltip {
+    display: inline-flex;
+    position: relative;
+
+    &__trigger{}
+    &__bubble {
+        white-space: nowrap;
+        border-radius: 10px;
+        background: var(--blue);
+        box-shadow: 0 2px 4px 0 rgba(33, 36, 41, 0.05);
+        @include text(var(--grey-2), 16px, normal, 400, 24px);
+        text-align: center;
+        padding: 13px 21px;
+        display: none;
+        position: absolute;
+        bottom: calc(100% + 9px);
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    &__bubble:before {
+        content: '';
+        border: 10px solid transparent;
+        position: absolute;
+        border-top-color: var(--blue);
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    &__trigger:hover ~ .tooltip__bubble {
+        display: block;
+    }
+}

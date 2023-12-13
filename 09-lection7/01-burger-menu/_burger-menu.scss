@@ -1,0 +1,47 @@
+@import "../../assets/css/variables";
+
+.burger-menu {
+    @include widthAndHeight(100vw, 100vh);
+    margin: 0;
+    background-color: rgba(196, 196, 196, 0.5);
+    @include  positionAndBackground(null, null, fixed, 0, 0, null, null);
+    transform: translateX(-100vw);
+    transition: transform 250ms linear;
+
+    @media screen and (min-width: 768px) {
+            display: none;
+    }
+
+    &[data-open] {
+        transform: none;
+    }
+
+    &__window {
+        max-width: 375px;
+        background-color: var(--white);
+    }
+
+    &_close {
+        @include border(none, 50%, null);
+        margin: 0;
+        padding: 0;
+        overflow: visible;
+        @include widthAndHeight(24px, 24px);
+        @include positionAndBackground(null, var(--grey-2), absolute, null, 16px, null, null);
+        @include flex(flex, center, center);
+        box-sizing: border-box;
+        cursor: pointer;
+    }
+
+    &_preview {
+        height: 100vh;
+        padding: 0 16px;
+    }
+}
+
+
+
+.burger__container {
+    @include flex(flex, center, center);
+    padding: 20px 16px;
+}
