@@ -1,13 +1,14 @@
 @import '../fonts/fonts';
 
-//@import "../../components/page/page.css";
-//@import "../../components/header/header.css";
-//@import "../../components/footer/footer.css";
-//@import "../../components/preview/preview.css";
-//@import "../../components/container/container.css";
-//@import "../../components/card/card.css";
-//@import "../../components/aside/aside.css";
-//@import "../../components/info/info.css";
+@import "../../components/page/_page.scss";
+@import "../../components/header/_header.scss";
+@import "../../components/footer/_footer.scss";
+@import "../../components/preview/_preview.scss";
+@import "../../components/container/_container.scss";
+@import "../../components/card/_card.scss";
+@import "../../components/aside/_aside.scss";
+@import "../../components/info/_info.scss";
+@import "../../components/html/_html.scss";
 
 @import "../../03-lection1/01-button/_button.scss";
 @import "../../03-lection1/02-accordion/_accordion.scss";

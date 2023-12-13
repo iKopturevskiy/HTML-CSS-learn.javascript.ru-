@@ -1,0 +1,27 @@
+@import "../../assets/css/variables";
+
+.card {
+    @include widthAndHeight(164px, 210px);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px 0 rgba(33, 36, 41, 0.05);
+    background: grey;
+
+    @media screen and (min-width: 768px) {
+            @include widthAndHeight(211px, 249px);
+            border-radius: 10px;
+    }
+
+    @media screen and (min-width: 992px) {
+            @include widthAndHeight(257px, 289px);
+    }
+
+    @media screen and (min-width: 1200px) {
+            @include widthAndHeight(304px, 328px);
+            border-radius: 12px;
+    }
+
+    @media screen and (min-width: 1400px) {
+            @include widthAndHeight(350px, 367px);
+    }
+}
+
