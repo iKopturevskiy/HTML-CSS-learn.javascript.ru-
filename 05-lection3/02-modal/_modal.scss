@@ -8,10 +8,19 @@
 
     &__window {
         padding: 30px 40px;
-        max-width: 428px;
+        max-width: 458px;
         border-radius: 8px;
+        border: 1px solid var(--grey-3);
         @include positionAndBackground(null, var(--white), absolute, 50%, 50%, null, null);
         transform: translate(-50%, -50%);
+    }
+
+    &__window_main-page {
+        padding: 16px;
+        position: relative;
+        transform: none;
+        top: 0;
+        left: 0;
     }
 
     &__open {
@@ -28,8 +37,12 @@
         cursor: pointer;
     }
 
-    &_title {
+    &__title {
         @include text(#334D6E, 20px, normal, 600, 24px);
+    }
+
+    &__title_main-page {
+        margin-top: 0;
     }
 
     &__text {

@@ -1,27 +1,55 @@
 @import "../../assets/css/variables";
 
 .card {
-    @include widthAndHeight(164px, 210px);
-    border-radius: 8px;
-    box-shadow: 0 2px 4px 0 rgba(33, 36, 41, 0.05);
-    background: grey;
+  @include widthAndHeight(164px, 210px);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px 0 rgba(33, 36, 41, 0.05);
+  background: white;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
 
-    @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) {
             @include widthAndHeight(211px, 249px);
             border-radius: 10px;
-    }
+  }
 
-    @media screen and (min-width: 992px) {
+  @media screen and (min-width: 992px) {
             @include widthAndHeight(257px, 289px);
-    }
+  }
 
-    @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1200px) {
             @include widthAndHeight(304px, 328px);
             border-radius: 12px;
-    }
+  }
 
-    @media screen and (min-width: 1400px) {
+  @media screen and (min-width: 1400px) {
             @include widthAndHeight(350px, 367px);
-    }
+  }
+
+  &__body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+  }
+
+  &__footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--black);
+  }
+
+  &__footer_tooltip {
+    font-size: 21px;
+    margin-top: 0;
+    margin-bottom: 2px;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: pre;
+  }
 }
 

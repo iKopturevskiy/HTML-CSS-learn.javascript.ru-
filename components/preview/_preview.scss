@@ -1,7 +1,7 @@
 @import "../../assets/css/variables";
 
 .preview {
-    background-color: #F9FAFC;
+    background-color: var(--grey-4);
     padding: 4.25rem 0;
 
     @media screen and (max-width: 768px) {

@@ -20,6 +20,10 @@
         transform: translateX(-50%);
     }
 
+    &__bobble_main-page {
+        display: block;
+    }
+
     &__bubble:before {
         content: '';
         border: 10px solid transparent;
