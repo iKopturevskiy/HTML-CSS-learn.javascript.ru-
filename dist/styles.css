@@ -69,14 +69,15 @@
 }
 
 .footer {
-  color: var(--grey-3, #ACB5BD);
-  font-size: 12px;
+  color: var(--black, #ACB5BD);
   font-style: normal;
   font-weight: 500;
   line-height: 18px;
+  padding: 5rem 0;
   letter-spacing: 0.48px;
-  text-transform: uppercase;
   text-align: center;
+  max-width: 50%;
+  margin: 0 auto;
 }
 @media screen and (max-width: 768px) {
   .footer {
@@ -88,7 +89,7 @@
 }
 
 .preview {
-  background-color: #F9FAFC;
+  background-color: var(--grey-4);
   padding: 4.25rem 0;
 }
 @media screen and (max-width: 768px) {
@@ -125,7 +126,11 @@
   height: 210px;
   border-radius: 8px;
   box-shadow: 0 2px 4px 0 rgba(33, 36, 41, 0.05);
-  background: grey;
+  background: white;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
 }
 @media screen and (min-width: 768px) {
   .card {
@@ -152,6 +157,27 @@
     width: 350px;
     height: 367px;
   }
+}
+.card__body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+}
+.card__footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--black);
+}
+.card__footer_tooltip {
+  font-size: 21px;
+  margin-top: 0;
+  margin-bottom: 2px;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: pre;
 }
 
 .aside {
@@ -378,6 +404,9 @@
   left: 50%;
   transform: translateX(-50%);
 }
+.tooltip__bobble_main-page {
+  display: block;
+}
 .tooltip__bubble:before {
   content: "";
   border: 10px solid transparent;
@@ -403,13 +432,21 @@
 }
 .modal__window {
   padding: 30px 40px;
-  max-width: 428px;
+  max-width: 458px;
   border-radius: 8px;
+  border: 1px solid var(--grey-3);
   background: var(--white);
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+.modal__window_main-page {
+  padding: 16px;
+  position: relative;
+  transform: none;
+  top: 0;
+  left: 0;
 }
 .modal__open {
   cursor: pointer;
@@ -425,12 +462,15 @@
 .modal__close:hover {
   cursor: pointer;
 }
-.modal_title {
+.modal__title {
   color: #334D6E;
   font-size: 20px;
   font-style: normal;
   font-weight: 600;
   line-height: 24px;
+}
+.modal__title_main-page {
+  margin-top: 0;
 }
 .modal__text {
   color: var(--grey-4);

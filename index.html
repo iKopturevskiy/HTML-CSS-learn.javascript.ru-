@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
     <head>
-        <link rel="stylesheet" href="assets/css/main.scss">
+        <link rel="stylesheet" href="dist/styles.css">
         <title>Reusable component library</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
@@ -20,16 +20,80 @@
             <main class="preview">
                 <div class="container">
                     <div class="preview__cards">
-                        <div class="card"></div>
-                        <div class="card"></div>
-                        <div class="card"></div>
-                        <div class="card"></div>
-                        <div class="card"></div>
-                        <div class="card"></div>
+                        <a href="" class="card">
+                            <div class="card__body">
+                                <div class="tooltip">
+                                    <div class="tooltip__trigger">
+                                        <svg width="24" height="24">
+                                            <use href="../../assets/images/icons.svg#help"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="tooltip__bubble tooltip__bobble_main-page">Helper Text</div>
+                                </div>
+                            </div>
+                            <div class="card__footer">
+                                <h4 class="card__footer_tooltip">Tooltip</h4>
+                                <p>Atom</p>
+                            </div>
+                        </a>
+                        <a href="" class="card">
+                            <div class="card__body">
+                                    <div class="modal__window modal__window_main-page">
+                                        <button class="modal__close" id="modal-close">
+                                            <svg width="24" height="24">
+                                                <use href="../../assets/images/icons.svg#button_x"></use>
+                                            </svg>
+                                        </button>
+                                        <h3 class="modal__title modal__title_main-page">Modal title</h3>
+                                        <p class="modal__text">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                            </div>
+                            <div class="card__footer">
+                                <h4 class="card__footer_tooltip">Modal</h4>
+                                <p>Organism</p>
+                            </div>
+                        </a>
+                        <a href="" class="card">
+                            <div class="card__body"></div>
+                            <div class="card__footer">
+                                <h4 class="card__footer_tooltip">Histogram</h4>
+                                <p>Organism</p>
+                            </div>
+                        </a>
+                        <a href="" class="card">
+                            <div class="card__body"></div>
+                            <div class="card__footer">
+                                <h4 class="card__footer_tooltip">Avatar</h4>
+                                <p>Atom</p>
+                            </div>
+                        </a>
+                        <a href="" class="card">
+                            <div class="card__body"></div>
+                            <div class="card__footer">
+                                <h4 class="card__footer_tooltip">Custom form elements</h4>
+                                <p>Molecules</p>
+                            </div>
+                        </a>
+                        <a href="" class="card">
+                            <div class="card__body"></div>
+                            <div class="card__footer">
+                                <h4 class="card__footer_tooltip">Calendar</h4>
+                                <p>Molecule</p>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </main>
-            <footer class="footer"></footer>
+            <footer class="footer">
+                <h2>About</h2>
+                <p>This project is a collection of professionally designed, pre-built,
+                    fully responsive HTML snippets you can drop into your projects.
+                    Get started by checking out our free preview components,
+                    or browsing the PNG previews in the categories you're most curious about.
+                </p>
+            </footer>
         </div>
     </body>
 </html>
