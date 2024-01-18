@@ -61,6 +61,7 @@
 .header__logo {
   display: flex;
   gap: 8px;
+  padding-left: 16px;
 }
 @media screen and (max-width: 768px) {
   .header__logo {
@@ -89,7 +90,7 @@
 }
 
 .preview {
-  background-color: var(--grey-4);
+  background-color: var(--grey-2);
   padding: 4.25rem 0;
 }
 @media screen and (max-width: 768px) {
@@ -100,7 +101,7 @@
 .preview__cards {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(164px, 1fr));
-  grid-gap: 1rem;
+  grid-gap: 30px;
   place-items: center;
 }
 @media screen and (min-width: 576px) {
@@ -360,10 +361,6 @@
   font-weight: 400;
   line-height: 24px;
 }
-.histogram__top {
-  display: flex;
-  justify-content: space-between;
-}
 .histogram__title {
   opacity: 0.8;
 }
@@ -380,6 +377,13 @@
 .histogram__bar {
   flex: 1;
   background-color: var(--blue);
+}
+.histogram_flex-reset {
+  display: block;
+}
+.histogram_main-page {
+  border-radius: 8px;
+  border: 1px solid var(--grey-3);
 }
 
 .tooltip {
@@ -442,11 +446,12 @@
   transform: translate(-50%, -50%);
 }
 .modal__window_main-page {
-  padding: 16px;
+  padding: 16px 24px 24px 24px;
   position: relative;
   transform: none;
   top: 0;
   left: 0;
+  max-width: 200px;
 }
 .modal__open {
   cursor: pointer;
@@ -818,6 +823,7 @@
 
 html, body {
   height: 100%;
+  margin: 0;
 }
 
 * {

@@ -16,11 +16,12 @@
     }
 
     &__window_main-page {
-        padding: 16px;
+        padding: 16px 24px 24px 24px;
         position: relative;
         transform: none;
         top: 0;
         left: 0;
+        max-width: 200px;
     }
 
     &__open {

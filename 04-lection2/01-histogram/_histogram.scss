@@ -4,8 +4,6 @@
     padding: 16px 24px 24px;
     @include text(var(--black), 16px, normal, 400, 24px);
     &__top {
-        display: flex;
-        justify-content: space-between;
     }
     &__total-orders {}
     &__title {
@@ -26,5 +24,14 @@
     &__bar {
         flex: 1;
         background-color: var(--blue);
+    }
+
+    &_flex-reset {
+        display: block;
+    }
+
+    &_main-page {
+        border-radius: 8px;
+        border: 1px solid var(--grey-3);
     }
 }
