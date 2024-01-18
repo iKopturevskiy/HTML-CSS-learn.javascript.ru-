@@ -1,7 +1,7 @@
 @import "../../assets/css/variables";
 
 .preview {
-    background-color: var(--grey-4);
+    background-color: var(--grey-2);
     padding: 4.25rem 0;
 
     @media screen and (max-width: 768px) {
@@ -11,7 +11,7 @@
     &__cards {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(164px, 1fr));
-        grid-gap: 1rem;
+        grid-gap: 30px;
         place-items: center;
 
         @media screen and (min-width: 576px) {
