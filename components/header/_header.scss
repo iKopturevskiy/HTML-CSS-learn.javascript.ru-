@@ -2,7 +2,7 @@
 
 .header {
     background: var(--white);
-    padding: 96px 71px 69px 16px;
+    //padding: 96px 71px 69px 16px;
 
     @media screen and (max-width: 768px) {
             padding: 16px 0;
@@ -13,7 +13,7 @@
 
         @media screen and (min-width: 768px) {
                 font-size: 2.09rem;
-                padding: 16px 71px 0 16px;
+                //padding: 16px 71px 0 16px;
         }
 
         @media screen and (min-width: 992px) {

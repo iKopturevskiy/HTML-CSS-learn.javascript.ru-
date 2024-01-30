@@ -26,11 +26,8 @@
         background-color: var(--blue);
     }
 
-    &_flex-reset {
-        display: block;
-    }
-
     &_main-page {
+        flex-grow: 1;
         border-radius: 8px;
         border: 1px solid var(--grey-3);
     }
