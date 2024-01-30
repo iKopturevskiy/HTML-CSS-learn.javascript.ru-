@@ -51,5 +51,14 @@
     text-overflow: ellipsis;
     white-space: pre;
   }
+
+  &__forms_main-page {
+    width: 80%;
+    height: 60%;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    pointer-events: none;
+  }
 }
 

@@ -20,7 +20,6 @@
 
 .header {
   background: var(--white);
-  padding: 96px 71px 69px 16px;
 }
 @media screen and (max-width: 768px) {
   .header {
@@ -37,7 +36,6 @@
 @media screen and (min-width: 768px) {
   .header__title {
     font-size: 2.09rem;
-    padding: 16px 71px 0 16px;
   }
 }
 @media screen and (min-width: 992px) {
@@ -179,6 +177,14 @@
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: pre;
+}
+.card__forms_main-page {
+  width: 80%;
+  height: 60%;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  pointer-events: none;
 }
 
 .aside {
@@ -378,10 +384,8 @@
   flex: 1;
   background-color: var(--blue);
 }
-.histogram_flex-reset {
-  display: block;
-}
 .histogram_main-page {
+  flex-grow: 1;
   border-radius: 8px;
   border: 1px solid var(--grey-3);
 }
@@ -512,7 +516,7 @@
   right: 0;
   bottom: 0;
   display: grid;
-  grid-template: repeat(7, 1fr)/repeat(7, 1fr);
+  grid-template: repeat(6, 1fr)/repeat(7, 1fr);
 }
 .calendar__item {
   font-style: normal;
@@ -532,6 +536,10 @@
 .calendar__item_start-end-date {
   background: var(--blue);
   color: white;
+}
+.calendar__main-page {
+  position: absolute;
+  transform: scale(50%);
 }
 
 .avatar {
@@ -823,7 +831,6 @@
 
 html, body {
   height: 100%;
-  margin: 0;
 }
 
 * {

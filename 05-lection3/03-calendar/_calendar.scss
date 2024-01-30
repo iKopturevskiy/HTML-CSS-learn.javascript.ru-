@@ -21,7 +21,7 @@
         @include positionAndBackground(null, null, absolute, 0, 0, null, 0);
         bottom: 0;
         display: grid;
-        grid-template: repeat(7, 1fr)/repeat(7, 1fr);
+        grid-template: repeat(6, 1fr)/repeat(7, 1fr);
     }
 
     &__item {
@@ -41,6 +41,11 @@
     &__item_start-end-date {
         background: var(--blue);
         color: white;
+    }
+
+    &__main-page {
+        position: absolute;
+        transform: scale(50%);
     }
 }
 
