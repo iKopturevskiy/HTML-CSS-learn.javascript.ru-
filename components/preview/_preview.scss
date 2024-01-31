@@ -2,7 +2,6 @@
 
 .preview {
     background-color: var(--grey-2);
-    padding: 4.25rem 0;
 
     @media screen and (max-width: 768px) {
             padding: 0;
@@ -17,5 +16,9 @@
         @media screen and (min-width: 576px) {
                 grid-template-columns: repeat(3, 1fr);
         }
+    }
+
+    & input {
+        display: none;
     }
 }

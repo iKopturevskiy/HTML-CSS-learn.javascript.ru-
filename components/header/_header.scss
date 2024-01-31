@@ -2,7 +2,7 @@
 
 .header {
     background: var(--white);
-    //padding: 96px 71px 69px 16px;
+    padding-top: 24px;
 
     @media screen and (max-width: 768px) {
             padding: 16px 0;
@@ -37,7 +37,6 @@
     &__logo {
         display: flex;
         gap: 8px;
-        padding-left: 16px;
 
         @media screen and (max-width: 768px) {
                 justify-content: center;

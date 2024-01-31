@@ -20,6 +20,7 @@
 
 .header {
   background: var(--white);
+  padding-top: 24px;
 }
 @media screen and (max-width: 768px) {
   .header {
@@ -59,7 +60,6 @@
 .header__logo {
   display: flex;
   gap: 8px;
-  padding-left: 16px;
 }
 @media screen and (max-width: 768px) {
   .header__logo {
@@ -89,7 +89,6 @@
 
 .preview {
   background-color: var(--grey-2);
-  padding: 4.25rem 0;
 }
 @media screen and (max-width: 768px) {
   .preview {
@@ -106,6 +105,9 @@
   .preview__cards {
     grid-template-columns: repeat(3, 1fr);
   }
+}
+.preview input {
+  display: none;
 }
 
 .container {
@@ -243,6 +245,47 @@
 
 .html {
   font-size: 16px;
+}
+
+.navigation__list {
+  color: var(--grey-3);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  display: flex;
+  list-style-type: none;
+  gap: 40px;
+  padding-inline-start: 0;
+  padding: 10px 100px;
+  background-color: var(--white);
+}
+.navigation__point {
+  padding: 8px 0;
+  transition: all 0.3s;
+}
+.navigation__point:hover {
+  color: var(--black);
+  border-bottom: 5px solid var(--black);
+}
+.navigation__line {
+  border: 1px solid var(--grey-3);
+}
+.navigation__list label {
+  cursor: pointer;
+}
+.navigation__pages {
+  padding: 48px 0;
+}
+.navigation__page {
+  display: none;
+}
+#nav1:checked ~ .navigation__pages .navigation__page-1, #nav2:checked ~ .navigation__pages .navigation__page-2, #nav3:checked ~ .navigation__pages .navigation__page-3, #nav4:checked ~ .navigation__pages .navigation__page-4 {
+  display: block;
+}
+#nav1:checked ~ nav .navigation__list .navigation__point-1, #nav2:checked ~ nav .navigation__list .navigation__point-2, #nav3:checked ~ nav .navigation__list .navigation__point-3, #nav4:checked ~ nav .navigation__list .navigation__point-4 {
+  color: var(--black);
+  border-bottom: 5px solid var(--black);
 }
 
 .button {
@@ -831,6 +874,7 @@
 
 html, body {
   height: 100%;
+  margin: 0 auto;
 }
 
 * {
