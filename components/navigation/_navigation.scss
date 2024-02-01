@@ -13,13 +13,21 @@
   }
 
   &__point {
+    position: relative;
     padding: 8px 0;
-    transition: all 0.3s;
+    transition: all 250ms ease-in-out;
   }
 
-  &__point:hover {
-    color: var(--black);
-    border-bottom:  5px solid var(--black);
+  &__point::after {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 5px;
+    width: 100%;
+    top: 100%;
+    background-color: var(--black);
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
   }
 
   &__line {
@@ -32,6 +40,7 @@
 
   &__pages {
     padding: 48px 0;
+    background-color: var(--grey-2);
   }
 
   &__page {
@@ -46,12 +55,20 @@
     display: block;
   }
 
+  #nav1:checked ~ nav &__list &__point-1::after,
+  #nav2:checked ~ nav &__list &__point-2::after,
+  #nav3:checked ~ nav &__list &__point-3::after,
+  #nav4:checked ~ nav &__list &__point-4::after,
+  &__point:hover::after {
+    transform: scaleX(1);
+  }
+
   #nav1:checked ~ nav &__list &__point-1,
   #nav2:checked ~ nav &__list &__point-2,
   #nav3:checked ~ nav &__list &__point-3,
-  #nav4:checked ~ nav &__list &__point-4
+  #nav4:checked ~ nav &__list &__point-4,
+  &__point:hover
   {
     color: var(--black);
-    border-bottom:  5px solid var(--black);
   }
 }

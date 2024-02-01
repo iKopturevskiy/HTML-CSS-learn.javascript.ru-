@@ -17,7 +17,7 @@
 
     &__control {
         @include widthAndHeight(52px, 28px);
-        @include border(1px solid var(--grey-2), 26px, null);
+        @include border(1px solid var(--grey-3), 26px, null);
         box-sizing: border-box;
         @include flex(flex, null, center);
         padding-left: 1px;
@@ -25,7 +25,7 @@
 
     &__point {
         @include widthAndHeight(24px, 24px);
-        background-color: var(--grey-2);
+        background-color: var(--grey-3);
         border-radius: 50%;
     }
 
@@ -45,7 +45,7 @@
     }
 
     &__input:disabled ~ &__state &__control {
-        background-color: var(--grey-2);
+        background-color: var(--grey-4);
     }
 
     &__input:disabled ~ &__state &__point {

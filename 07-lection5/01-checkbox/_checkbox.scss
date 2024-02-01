@@ -15,10 +15,14 @@
         cursor: pointer;
     }
 
+    &__icon {
+        opacity: 0;
+    }
+
     &__control {
         width: 28px;
         height: 28px;
-        @include border(1px solid var(--grey-2), 4px, null);
+        @include border(1px solid var(--grey-3), 4px, null);
         @include flex(flex, center, center);
         box-sizing: border-box;
     }
@@ -32,13 +36,17 @@
         border-color: var(--blue);
     }
 
+    &__input:checked + &__state &__icon {
+        opacity: 1;
+    }
+
     &__input:focus ~ &__state &__title {
         text-decoration: underline;
     }
 
     &__input:disabled ~ &__state &__control {
-        background-color: var(--grey-2);
-        border-color: var(--grey-2);
+        background-color: var(--grey-3);
+        border-color: var(--grey-3);
     }
 
     &__input:disabled ~ &__state &__control use{
@@ -46,6 +54,6 @@
     }
 
     &__input:disabled ~ &__state &__title {
-        color: var(--grey-2);
+        color: var(--grey-3);
     }
 }
