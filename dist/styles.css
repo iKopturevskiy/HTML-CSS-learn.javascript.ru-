@@ -87,9 +87,6 @@
   background: var(--tranparent);
 }
 
-.preview {
-  background-color: var(--grey-2);
-}
 @media screen and (max-width: 768px) {
   .preview {
     padding: 0;
@@ -261,12 +258,20 @@
   background-color: var(--white);
 }
 .navigation__point {
+  position: relative;
   padding: 8px 0;
-  transition: all 0.3s;
+  transition: all 250ms ease-in-out;
 }
-.navigation__point:hover {
-  color: var(--black);
-  border-bottom: 5px solid var(--black);
+.navigation__point::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 5px;
+  width: 100%;
+  top: 100%;
+  background-color: var(--black);
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
 }
 .navigation__line {
   border: 1px solid var(--grey-3);
@@ -276,6 +281,7 @@
 }
 .navigation__pages {
   padding: 48px 0;
+  background-color: var(--grey-2);
 }
 .navigation__page {
   display: none;
@@ -283,9 +289,11 @@
 #nav1:checked ~ .navigation__pages .navigation__page-1, #nav2:checked ~ .navigation__pages .navigation__page-2, #nav3:checked ~ .navigation__pages .navigation__page-3, #nav4:checked ~ .navigation__pages .navigation__page-4 {
   display: block;
 }
-#nav1:checked ~ nav .navigation__list .navigation__point-1, #nav2:checked ~ nav .navigation__list .navigation__point-2, #nav3:checked ~ nav .navigation__list .navigation__point-3, #nav4:checked ~ nav .navigation__list .navigation__point-4 {
+#nav1:checked ~ nav .navigation__list .navigation__point-1::after, #nav2:checked ~ nav .navigation__list .navigation__point-2::after, #nav3:checked ~ nav .navigation__list .navigation__point-3::after, #nav4:checked ~ nav .navigation__list .navigation__point-4::after, .navigation__point:hover::after {
+  transform: scaleX(1);
+}
+#nav1:checked ~ nav .navigation__list .navigation__point-1, #nav2:checked ~ nav .navigation__list .navigation__point-2, #nav3:checked ~ nav .navigation__list .navigation__point-3, #nav4:checked ~ nav .navigation__list .navigation__point-4, .navigation__point:hover {
   color: var(--black);
-  border-bottom: 5px solid var(--black);
 }
 
 .button {
