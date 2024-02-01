@@ -7,4 +7,12 @@
     &__title {
         @include text(var(--grey-3), 20px, normal, 400, 26px);
     }
+
+    &__custom-elements {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-auto-flow: column;
+        gap: 2rem;
+    }
 }

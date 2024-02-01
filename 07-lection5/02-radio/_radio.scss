@@ -17,7 +17,7 @@
 
     &__control {
         @include widthAndHeight(28px, 28px);
-        @include border(1px solid var(--grey-2), 50%, null);
+        @include border(1px solid var(--grey-3), 50%, null);
         @include flex(flex, center, center);
         box-sizing: border-box;
     }
@@ -46,11 +46,11 @@
     }
 
     &__input:disabled ~ &__state &__control {
-        background-color: var(--grey-2);
+        background-color: var(--grey-3);
     }
 
     &__input:disabled ~ &__state &__title {
-        color: var(--grey-2);
+        color: var(--grey-3);
     }
 }
 

@@ -19,8 +19,8 @@
             </header>
             <main class="preview navigation">
                 <section>
-                    <input checked="checked" id="nav1" type="radio" name="nav">
-                    <input id="nav2" type="radio" name="nav">
+                    <input id="nav1" type="radio" name="nav">
+                    <input checked="checked" id="nav2" type="radio" name="nav">
                     <input id="nav3" type="radio" name="nav">
                     <input id="nav4" type="radio" name="nav">
                     <nav>
@@ -62,14 +62,14 @@
                             <a href="" class="card">
                                 <div class="card__body">
                                     <div class="modal__window modal__window_main-page">
-                                        <button class="modal__close" id="modal-close">
+                                        <button class="modal__close">
                                             <svg width="24" height="24">
                                                 <use href="../../assets/images/icons.svg#button_x"></use>
                                             </svg>
                                         </button>
                                         <h3 class="modal__title modal__title_main-page">Modal title</h3>
                                         <p class="modal__text">
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                            Some random text. I'll have to add something more interesting here.
                                         </p>
                                     </div>
                                 </div>
@@ -161,8 +161,8 @@
                                                 <span class="checkbox__title">Default</span>
                                             </div>
                                         </label>
-                                        <label for="radio1" class="radio">
-                                            <input type="radio" id="radio1" name="radio-name" value="1" class="radio__input">
+                                        <label for="radio" class="radio">
+                                            <input type="radio" id="radio" name="radio-name" value="1" class="radio__input">
                                             <div class="radio__state">
                                                 <div class="radio__control">
                                                     <div class="radio__checked"></div>
@@ -182,7 +182,7 @@
                                             </div>
                                         </label>
                                         <label for="radio2" class="radio">
-                                            <input type="radio" id="radio2" name="radio-name" value="1" class="radio__input" checked>
+                                            <input type="radio" id="radio2" name="radio-name" value="1" class="radio__input" checked="checked">
                                             <div class="radio__state">
                                                 <div class="radio__control">
                                                     <div class="radio__checked"></div>
@@ -276,9 +276,376 @@
                             </a>
                         </div>
                     </div>
-                        <div class="container navigation__page navigation__page-2">Page 2</div>
-                        <div class="container navigation__page navigation__page-3">Page 3</div>
-                        <div class="container navigation__page navigation__page-4">Page 4</div>
+                        <div class="container navigation__page navigation__page-2">
+                            <div>
+                                <div class="preview__cards">
+                                    <a href="" class="card">
+                                        <div class="card__body">
+                                            <div class="tooltip">
+                                                <div class="tooltip__trigger">
+                                                    <svg width="24" height="24">
+                                                        <use href="../../assets/images/icons.svg#help"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="tooltip__bubble tooltip__bobble_main-page">Helper Text</div>
+                                            </div>
+                                        </div>
+                                        <div class="card__footer">
+                                            <h4 class="card__footer_tooltip">Tooltip</h4>
+                                            <p>Atom</p>
+                                        </div>
+                                    </a>
+                                    <a href="" class="card">
+                                        <div class="card__body">
+                                            <div class="avatar">
+                                                <img
+                                                        src="/assets/images/Avatar.png"
+                                                        class="avatar__image"
+                                                        alt="avatar"
+                                                        sizes="(max-width: 768px) 102px, 200px"
+                                                >
+                                            </div>
+                                        </div>
+                                        <div class="card__footer">
+                                            <h4 class="card__footer_tooltip">Avatar</h4>
+                                            <p>Atom</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div>
+                                <h3 class="html__h3">BUTTONS</h3>
+                                <div class="button__block">
+                                    <button class="button button_title">Button</button>
+                                    <button class="button button_title" disabled>Button disabled</button>
+                                    <button class="button button_primary">Primary</button>
+                                    <button class="button button_primary" disabled>Primary disabled</button>
+                                    <button class="button button_secondary">Secondary</button>
+                                    <button class="button button_secondary" disabled>Secondary disabled</button>
+                                    <button class="button button_alternate">Alternate</button>
+                                    <button class="button button_alternate" disabled>Alternate disabled</button>
+                                </div>
+                            </div>
+                            <div>
+                                <h3 class="html__h3">CUSTOM FORM ELEMENTS</h3>
+                                <div class="container__custom-elements">
+                                    <label for="radio7" class="radio">
+                                        <input type="radio" id="radio7" name="radio-name3" value="1" class="radio__input" checked="checked">
+                                        <div class="radio__state">
+                                            <div class="radio__control">
+                                                <div class="radio__checked"></div>
+                                            </div>
+                                            <span class="radio__title">Male</span>
+                                        </div>
+                                    </label>
+                                    <label for="radio8" class="radio">
+                                        <input type="radio" id="radio8" name="radio-name3" value="1" class="radio__input">
+                                        <div class="radio__state">
+                                            <div class="radio__control">
+                                                <div class="radio__checked"></div>
+                                            </div>
+                                            <span class="radio__title">Female</span>
+                                        </div>
+                                    </label>
+                                    <label for="radio9" class="radio">
+                                        <input type="radio" id="radio9" name="radio-name3" value="1" class="radio__input" disabled>
+                                        <div class="radio__state">
+                                            <div class="radio__control">
+                                                <div class="radio__checked"></div>
+                                            </div>
+                                            <span class="radio__title">Special</span>
+                                        </div>
+                                    </label>
+                                    <label for="checkbox7" class="checkbox">
+                                        <input type="checkbox" id="checkbox7" class="checkbox__input" checked="checked">
+                                        <div class="checkbox__state">
+                                            <div class="checkbox__control">
+                                                <svg width="15" height="13" fill="none" class="checkbox__icon">
+                                                    <use href="../../assets/images/icons.svg#checkbox"></use>
+                                                </svg>
+                                            </div>
+                                            <span class="checkbox__title">Default</span>
+                                        </div>
+                                    </label>
+                                    <label for="checkbox8" class="checkbox">
+                                        <input type="checkbox" id="checkbox8" class="checkbox__input">
+                                        <div class="checkbox__state">
+                                            <div class="checkbox__control">
+                                                <svg width="15" height="13" fill="none" class="checkbox__icon">
+                                                    <use href="../../assets/images/icons.svg#checkbox"></use>
+                                                </svg>
+                                            </div>
+                                            <span class="checkbox__title">Default</span>
+                                        </div>
+                                    </label>
+                                    <label for="checkbox9" class="checkbox">
+                                        <input type="checkbox" id="checkbox9" class="checkbox__input" disabled>
+                                        <div class="checkbox__state">
+                                            <div class="checkbox__control">
+                                                <svg width="15" height="13" fill="none" class="checkbox__icon">
+                                                    <use href="../../assets/images/icons.svg#checkbox"></use>
+                                                </svg>
+                                            </div>
+                                            <span class="checkbox__title">Default</span>
+                                        </div>
+                                    </label>
+                                    <label for="toggle" class="toggle">
+                                        <input type="checkbox" id="toggle" class="toggle__input" checked="checked">
+                                        <div class="toggle__state">
+                                            <div class="toggle__control">
+                                                <div class="toggle__point"></div>
+                                            </div>
+                                            <span class="toggle__title">Toggle</span>
+                                        </div>
+                                    </label>
+                                    <label for="toggle2" class="toggle">
+                                        <input type="checkbox" id="toggle2" class="toggle__input">
+                                        <div class="toggle__state">
+                                            <div class="toggle__control">
+                                                <div class="toggle__point"></div>
+                                            </div>
+                                            <span class="toggle__title">Toggle</span>
+                                        </div>
+                                    </label>
+                                    <label for="toggle3" class="toggle">
+                                        <input type="checkbox" id="toggle3" class="toggle__input" disabled>
+                                        <div class="toggle__state">
+                                            <div class="toggle__control">
+                                                <div class="toggle__point"></div>
+                                            </div>
+                                            <span class="toggle__title">Toggle</span>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container navigation__page navigation__page-3">
+                            <div>
+                                <div class="preview__cards">
+                                    <a href="" class="card">
+                                        <div class="card__body">
+                                            <div class="card__forms_main-page">
+                                                <label for="checkbox4" class="checkbox">
+                                                    <input type="checkbox" id="checkbox4" class="checkbox__input">
+                                                    <div class="checkbox__state">
+                                                        <div class="checkbox__control">
+                                                            <svg width="15" height="13" fill="none" >
+                                                                <use href="../../assets/images/icons.svg#checkbox"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <span class="checkbox__title">Default</span>
+                                                    </div>
+                                                </label>
+                                                <label for="radio4" class="radio">
+                                                    <input type="radio" id="radio4" name="radio-name2" value="1" class="radio__input">
+                                                    <div class="radio__state">
+                                                        <div class="radio__control">
+                                                            <div class="radio__checked"></div>
+                                                        </div>
+                                                        <span class="radio__title">Default</span>
+                                                    </div>
+                                                </label>
+                                                <label for="checkbox5" class="checkbox">
+                                                    <input type="checkbox" id="checkbox5" class="checkbox__input" checked>
+                                                    <div class="checkbox__state">
+                                                        <div class="checkbox__control">
+                                                            <svg width="15" height="13" fill="none" >
+                                                                <use href="../../assets/images/icons.svg#checkbox"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <span class="checkbox__title">Checked</span>
+                                                    </div>
+                                                </label>
+                                                <label for="radio5" class="radio">
+                                                    <input type="radio" id="radio5" name="radio-name2" value="1" class="radio__input" checked>
+                                                    <div class="radio__state">
+                                                        <div class="radio__control">
+                                                            <div class="radio__checked"></div>
+                                                        </div>
+                                                        <span class="radio__title">Selected</span>
+                                                    </div>
+                                                </label>
+                                                <label for="checkbox6" class="checkbox">
+                                                    <input type="checkbox" id="checkbox6" class="checkbox__input" disabled>
+                                                    <div class="checkbox__state">
+                                                        <div class="checkbox__control">
+                                                            <svg width="15" height="13" fill="none" >
+                                                                <use href="../../assets/images/icons.svg#checkbox"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <span class="checkbox__title">Disabled</span>
+                                                    </div>
+                                                </label>
+                                                <label for="radio6" class="radio">
+                                                    <input type="radio" id="radio6" name="radio-name2" value="1" class="radio__input" disabled>
+                                                    <div class="radio__state">
+                                                        <div class="radio__control">
+                                                            <div class="radio__checked"></div>
+                                                        </div>
+                                                        <span class="radio__title">Disabled</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="card__footer">
+                                            <h4 class="card__footer_tooltip">Custom form elements</h4>
+                                            <p>Molecules</p>
+                                        </div>
+                                    </a>
+                                    <a href="" class="card">
+                                        <div class="card__body">
+                                            <div class="calendar calendar__main-page">
+                                                <div class="calendar__title">October 2019</div>
+                                                <div class="calendar__wrapper">
+                                                    <div class="calendar__inner">
+                                                        <span class="calendar__item calendar__item_day">Mon</span>
+                                                        <span class="calendar__item calendar__item_day">Tue</span>
+                                                        <span class="calendar__item calendar__item_day">Wed</span>
+                                                        <span class="calendar__item calendar__item_day">Thu</span>
+                                                        <span class="calendar__item calendar__item_day">Fri</span>
+                                                        <span class="calendar__item calendar__item_day">Sat</span>
+                                                        <span class="calendar__item calendar__item_day">Sun</span>
+                                                        <span class="calendar__item"></span>
+                                                        <span class="calendar__item"></span>
+                                                        <span class="calendar__item"></span>
+                                                        <span class="calendar__item"></span>
+                                                        <span class="calendar__item">1</span>
+                                                        <span class="calendar__item">2</span>
+                                                        <span class="calendar__item">3</span>
+                                                        <span class="calendar__item">4</span>
+                                                        <span class="calendar__item">5</span>
+                                                        <span class="calendar__item">6</span>
+                                                        <span class="calendar__item">7</span>
+                                                        <span class="calendar__item">8</span>
+                                                        <span class="calendar__item">9</span>
+                                                        <span class="calendar__item">10</span>
+                                                        <span class="calendar__item">11</span>
+                                                        <span class="calendar__item">12</span>
+                                                        <span class="calendar__item">13</span>
+                                                        <span class="calendar__item">14</span>
+                                                        <span class="calendar__item">15</span>
+                                                        <span class="calendar__item">16</span>
+                                                        <span class="calendar__item">17</span>
+                                                        <span class="calendar__item calendar__item_selected-days calendar__item_start-end-date">18</span>
+                                                        <span class="calendar__item calendar__item_selected-days">19</span>
+                                                        <span class="calendar__item calendar__item_selected-days">20</span>
+                                                        <span class="calendar__item calendar__item_selected-days">21</span>
+                                                        <span class="calendar__item calendar__item_selected-days">22</span>
+                                                        <span class="calendar__item calendar__item_selected-days calendar__item_start-end-date">23</span>
+                                                        <span class="calendar__item">24</span>
+                                                        <span class="calendar__item">25</span>
+                                                        <span class="calendar__item">26</span>
+                                                        <span class="calendar__item">27</span>
+                                                        <span class="calendar__item">28</span>
+                                                        <span class="calendar__item">29</span>
+                                                        <span class="calendar__item">30</span>
+                                                        <span class="calendar__item">31</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card__footer">
+                                            <h4 class="card__footer_tooltip">Calendar</h4>
+                                            <p>Molecule</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div>
+                                <h3 class="html__h3">SKELETON</h3>
+                                <div></div>
+                            </div>
+                            <div>
+                                <h3 class="html__h3">CUSTOM FORM ELEMENTS</h3>
+                                <div></div>
+                            </div>
+                        </div>
+                        <div class="container navigation__page navigation__page-4">
+                            <div>
+                                <div class="preview__cards">
+                                    <a href="" class="card">
+                                        <div class="card__body">
+                                            <div class="modal__window modal__window_main-page">
+                                                <button class="modal__close" id="modal-close">
+                                                    <svg width="24" height="24">
+                                                        <use href="../../assets/images/icons.svg#button_x"></use>
+                                                    </svg>
+                                                </button>
+                                                <h3 class="modal__title modal__title_main-page">Modal title</h3>
+                                                <p class="modal__text">
+                                                    Some random text. I'll have to add something more interesting here.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="card__footer">
+                                            <h4 class="card__footer_tooltip">Modal</h4>
+                                            <p>Organism</p>
+                                        </div>
+                                    </a>
+                                    <a href="" class="card">
+                                        <div class="card__body histogram_flex-reset">
+                                            <div class="histogram histogram_main-page">
+                                                <div class="histogram__top">
+                                                    <div class="histogram__total-orders">
+                                                        <p class="histogram__title">Total orders</p>
+                                                        <h4 class="histogram__orders">50254</h4>
+                                                    </div>
+                                                </div>
+                                                <div class="histogram__bottom">
+                                                    <div class="histogram__chart">
+                                                        <div class="histogram__bar" style="height: 80%;"></div>
+                                                        <div class="histogram__bar" style="height: 60%;"></div>
+                                                        <div class="histogram__bar" style="height: 40%;"></div>
+                                                        <div class="histogram__bar" style="height: 70%;"></div>
+                                                        <div class="histogram__bar" style="height: 90%;"></div>
+                                                        <div class="histogram__bar" style="height: 45%;"></div>
+                                                        <div class="histogram__bar" style="height: 55%;"></div>
+                                                        <div class="histogram__bar" style="height: 75%;"></div>
+                                                        <div class="histogram__bar" style="height: 30%;"></div>
+                                                        <div class="histogram__bar" style="height: 85%;"></div>
+                                                        <div class="histogram__bar" style="height: 50%;"></div>
+                                                        <div class="histogram__bar" style="height: 65%;"></div>
+                                                        <div class="histogram__bar" style="height: 20%;"></div>
+                                                        <div class="histogram__bar" style="height: 75%;"></div>
+                                                        <div class="histogram__bar" style="height: 40%;"></div>
+                                                        <div class="histogram__bar" style="height: 60%;"></div>
+                                                        <div class="histogram__bar" style="height: 85%;"></div>
+                                                        <div class="histogram__bar" style="height: 25%;"></div>
+                                                        <div class="histogram__bar" style="height: 70%;"></div>
+                                                        <div class="histogram__bar" style="height: 35%;"></div>
+                                                        <div class="histogram__bar" style="height: 80%;"></div>
+                                                        <div class="histogram__bar" style="height: 45%;"></div>
+                                                        <div class="histogram__bar" style="height: 55%;"></div>
+                                                        <div class="histogram__bar" style="height: 70%;"></div>
+                                                        <div class="histogram__bar" style="height: 30%;"></div>
+                                                        <div class="histogram__bar" style="height: 65%;"></div>
+                                                        <div class="histogram__bar" style="height: 50%;"></div>
+                                                        <div class="histogram__bar" style="height: 75%;"></div>
+                                                        <div class="histogram__bar" style="height: 40%;"></div>
+                                                        <div class="histogram__bar" style="height: 60%;"></div>
+                                                        <div class="histogram__bar" style="height: 85%;"></div>
+                                                        <div class="histogram__bar" style="height: 25%;"></div>
+                                                        <div class="histogram__bar" style="height: 70%;"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card__footer">
+                                            <h4 class="card__footer_tooltip">Histogram</h4>
+                                            <p>Organism</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div>
+                                <h3 class="html__h3">MODAL</h3>
+                                <div></div>
+                            </div>
+                            <div>
+                                <h3 class="html__h3">ACCORDION</h3>
+                                <div></div>
+                            </div>
+                        </div>
                     </div>
                 </section>
             </main>

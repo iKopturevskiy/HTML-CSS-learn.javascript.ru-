@@ -2,19 +2,13 @@
 
 .preview {
 
-    @media screen and (max-width: 768px) {
-            padding: 0;
-    }
-
     &__cards {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(164px, 1fr));
+        //grid-template-columns: repeat(auto-fill, minmax(164px, 1fr));
+        grid-template-columns: repeat(3, calc(33.3333% - 15px));
+        grid-template-rows: repeat(auto-fill, minmax(350px, auto));
         grid-gap: 30px;
         place-items: center;
-
-        @media screen and (min-width: 576px) {
-                grid-template-columns: repeat(3, 1fr);
-        }
     }
 
     & input {
