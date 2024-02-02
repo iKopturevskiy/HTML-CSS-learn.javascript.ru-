@@ -8,6 +8,7 @@ $padding-bottom: 32px;
         @include border(1px solid var(--grey-3), 8px, null);
         padding: 24px 32px;
         margin-bottom: 8px;
+        background-color: var(--white);
     }
 
     &__item[open] .accordion__vector {
