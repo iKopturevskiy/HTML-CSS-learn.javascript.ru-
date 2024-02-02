@@ -5,6 +5,13 @@
         @include text(var(--grey-3), 12px, normal, 500, 18px);
         letter-spacing: 0.48px;
         text-transform: uppercase;
+        display: inline-block;
+    }
+
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
     }
 
     &__wrapper {
@@ -38,6 +45,10 @@
 
     &_error &__input {
         border-color: var(--error);
+    }
+
+    &_success &__input {
+        border-color: var(--blue);
     }
 
     &_success &__input:focus,

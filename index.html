@@ -20,8 +20,8 @@
             <main class="preview navigation">
                 <section>
                     <input id="nav1" type="radio" name="nav">
-                    <input checked="checked" id="nav2" type="radio" name="nav">
-                    <input id="nav3" type="radio" name="nav">
+                    <input id="nav2" type="radio" name="nav">
+                    <input checked="checked" id="nav3" type="radio" name="nav">
                     <input id="nav4" type="radio" name="nav">
                     <nav>
                         <ul class="container navigation__list">
@@ -553,11 +553,63 @@
                             </div>
                             <div>
                                 <h3 class="html__h3">SKELETON</h3>
-                                <div></div>
+                                <div>
+                                    <div class="skeleton">
+                                        <div class="skeleton__top">
+                                            <div class="skeleton__avatar"></div>
+                                            <div class="skeleton__rows">
+                                                <div class="skeleton__row skeleton__row_small"></div>
+                                                <div class="skeleton__row skeleton__row_medium"></div>
+                                            </div>
+
+                                        </div>
+                                        <div class="skeleton__bottom">
+                                            <div class="skeleton__row skeleton__row_large"></div>
+                                            <div class="skeleton__row skeleton__row_large"></div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div>
                                 <h3 class="html__h3">CUSTOM FORM ELEMENTS</h3>
-                                <div></div>
+                                <div class="form__container">
+                                    <form class="form">
+                                        <label for="input_text" class="form__title">input_text</label>
+                                        <div class="form__wrapper">
+                                            <input type="text" id="input_text" class="form__input" placeholder="Placeholder">
+                                            <svg width="24" height="24" fill="none" class="form__icon form__icon_success">
+                                                <use href="../../assets/images/icons.svg#success"></use>
+                                            </svg>
+                                            <svg width="24" height="24" fill="none" class="form__icon form__icon_error">
+                                                <use href="../../assets/images/icons.svg#error"></use>
+                                            </svg>
+                                        </div>
+                                    </form>
+                                    <form class="form form_error">
+                                        <label for="input_text2" class="form__title">input_text</label>
+                                        <div class="form__wrapper">
+                                            <input type="text" id="input_text2" class="form__input" placeholder="Placeholder">
+                                            <svg width="24" height="24" fill="none" class="form__icon form__icon_success">
+                                                <use href="../../assets/images/icons.svg#success"></use>
+                                            </svg>
+                                            <svg width="24" height="24" fill="none" class="form__icon form__icon_error">
+                                                <use href="../../assets/images/icons.svg#error"></use>
+                                            </svg>
+                                        </div>
+                                    </form>
+                                    <form class="form form_success">
+                                        <label for="input_text3" class="form__title">input_text</label>
+                                        <div class="form__wrapper">
+                                            <input type="text" id="input_text3" class="form__input" placeholder="Placeholder">
+                                            <svg width="24" height="24" fill="none" class="form__icon form__icon_success">
+                                                <use href="../../assets/images/icons.svg#success"></use>
+                                            </svg>
+                                            <svg width="24" height="24" fill="none" class="form__icon form__icon_error">
+                                                <use href="../../assets/images/icons.svg#error"></use>
+                                            </svg>
+                                        </div>
+                                    </form>
+                                </div>
                             </div>
                         </div>
                         <div class="container navigation__page navigation__page-4">

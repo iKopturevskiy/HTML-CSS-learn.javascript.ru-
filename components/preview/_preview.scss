@@ -11,7 +11,11 @@
         place-items: center;
     }
 
-    & input {
+    #nav1,
+    #nav2,
+    #nav3,
+    #nav4
+    {
         display: none;
     }
 }
