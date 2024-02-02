@@ -3,6 +3,7 @@
 .container {
     max-width: 1110px;
     margin: 0 auto;
+    padding: 0 16px;
 
     &__title {
         @include text(var(--grey-3), 20px, normal, 400, 26px);

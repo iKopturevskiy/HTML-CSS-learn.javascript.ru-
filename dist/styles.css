@@ -104,6 +104,7 @@
 .container {
   max-width: 1110px;
   margin: 0 auto;
+  padding: 0 16px;
 }
 .container__title {
   color: var(--grey-3);
@@ -350,6 +351,7 @@
   border-radius: 8px;
   padding: 24px 32px;
   margin-bottom: 8px;
+  background-color: var(--white);
 }
 .accordion__item[open] .accordion__vector {
   transform: rotateX(180deg);
@@ -508,7 +510,26 @@
   max-width: 200px;
 }
 .modal__open {
+  display: inline-flex;
+  justify-content: center;
+  height: 3rem;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.2;
+  font-family: "Roboto", sans-serif;
+  padding: 0.875rem 1rem;
+  text-align: center;
+  border-radius: 0.5rem;
+  border: none;
+  box-shadow: none;
   cursor: pointer;
+  transition: all 0.2s linear;
+  color: white;
+  background-color: var(--primary);
+}
+.modal__open:hover {
+  background-color: var(--primary-hover);
 }
 .modal__close {
   background: var(--white);
