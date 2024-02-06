@@ -31,7 +31,8 @@
   }
 
   &__line {
-    border: 1px solid var(--grey-3);
+    height: 1px;
+    background-color: var(--grey-3);
   }
 
   &__list label {
@@ -41,6 +42,10 @@
   &__pages {
     padding: 48px 0;
     background-color: var(--grey-2);
+  }
+
+  &__pages_components {
+    background-color: var(--white);
   }
 
   &__page {
@@ -70,5 +75,13 @@
   &__point:hover
   {
     color: var(--black);
+  }
+
+  &_component {
+    padding: 10px 0;
+  }
+
+  &__line_component {
+    background-color: var(--grey-2);
   }
 }
