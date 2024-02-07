@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Template</title>
+        <title>Modal</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="../dist/styles.css">
     </head>
@@ -34,53 +34,23 @@
                         </div>
                     </aside>
                     <div class="info">
-                        <h2>Histogram</h2>
-                        <div class="histogram histogram_main-page">
-                            <div class="histogram__top">
-                                <div class="histogram__total-orders">
-                                    <p class="histogram__title">Total orders</p>
-                                    <h4 class="histogram__orders">50254</h4>
-                                </div>
-                                <div class="histogram__view">
-                                    <a href="" class="histogram__href">View all</a>
-                                </div>
-                            </div>
-                            <div class="histogram__bottom">
-                                <div class="histogram__chart">
-                                    <div class="histogram__bar" style="height: 80%;"></div>
-                                    <div class="histogram__bar" style="height: 60%;"></div>
-                                    <div class="histogram__bar" style="height: 40%;"></div>
-                                    <div class="histogram__bar" style="height: 70%;"></div>
-                                    <div class="histogram__bar" style="height: 90%;"></div>
-                                    <div class="histogram__bar" style="height: 45%;"></div>
-                                    <div class="histogram__bar" style="height: 55%;"></div>
-                                    <div class="histogram__bar" style="height: 75%;"></div>
-                                    <div class="histogram__bar" style="height: 30%;"></div>
-                                    <div class="histogram__bar" style="height: 85%;"></div>
-                                    <div class="histogram__bar" style="height: 50%;"></div>
-                                    <div class="histogram__bar" style="height: 65%;"></div>
-                                    <div class="histogram__bar" style="height: 20%;"></div>
-                                    <div class="histogram__bar" style="height: 75%;"></div>
-                                    <div class="histogram__bar" style="height: 40%;"></div>
-                                    <div class="histogram__bar" style="height: 60%;"></div>
-                                    <div class="histogram__bar" style="height: 85%;"></div>
-                                    <div class="histogram__bar" style="height: 25%;"></div>
-                                    <div class="histogram__bar" style="height: 70%;"></div>
-                                    <div class="histogram__bar" style="height: 35%;"></div>
-                                    <div class="histogram__bar" style="height: 80%;"></div>
-                                    <div class="histogram__bar" style="height: 45%;"></div>
-                                    <div class="histogram__bar" style="height: 55%;"></div>
-                                    <div class="histogram__bar" style="height: 70%;"></div>
-                                    <div class="histogram__bar" style="height: 30%;"></div>
-                                    <div class="histogram__bar" style="height: 65%;"></div>
-                                    <div class="histogram__bar" style="height: 50%;"></div>
-                                    <div class="histogram__bar" style="height: 75%;"></div>
-                                    <div class="histogram__bar" style="height: 40%;"></div>
-                                    <div class="histogram__bar" style="height: 60%;"></div>
-                                    <div class="histogram__bar" style="height: 85%;"></div>
-                                    <div class="histogram__bar" style="height: 25%;"></div>
-                                    <div class="histogram__bar" style="height: 70%;"></div>
-                                </div>
+                        <h2>Modal</h2>
+                        <button class="modal__open" id="modal-open">Open modal</button>
+                        <div class="modal" id="modal">
+                            <div class="modal__window">
+                                <button class="modal__close" id="modal-close">
+                                    <svg width="24" height="24">
+                                        <use href="../../assets/images/icons.svg#button_x"></use>
+                                    </svg>
+                                </button>
+                                <h3 class="modal_title">Modal title</h3>
+                                <p class="modal__text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                                    Velit officia consequat duis enim velit mollit.
+                                    Exercitation veniam consequat sunt nostrud amet.
+                                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                                    Velit officia consequat duis enim velit mollit.
+                                    Exercitation veniam consequat sunt nostrud amet.
+                                </p>
                             </div>
                         </div>
                         <div class="info__code">
@@ -103,54 +73,24 @@
                                         <figure>
                                             <pre>
                                                 <code data-language="html">
-<div class="histogram">
-            <div class="histogram__top">
-                <div class="histogram__total-orders">
-                    <p class="histogram__title">Total orders</p>
-                    <h4 class="histogram__orders">50254</h4>
-                </div>
-                <div class="histogram__view">
-                        <a href="" class="histogram__href">View all</a>
-                </div>
-            </div>
-            <div class="histogram__bottom">
-                <div class="histogram__chart">
-                    <div class="histogram__bar" style="height: 80%;"></div>
-                    <div class="histogram__bar" style="height: 60%;"></div>
-                    <div class="histogram__bar" style="height: 40%;"></div>
-                    <div class="histogram__bar" style="height: 70%;"></div>
-                    <div class="histogram__bar" style="height: 90%;"></div>
-                    <div class="histogram__bar" style="height: 45%;"></div>
-                    <div class="histogram__bar" style="height: 55%;"></div>
-                    <div class="histogram__bar" style="height: 75%;"></div>
-                    <div class="histogram__bar" style="height: 30%;"></div>
-                    <div class="histogram__bar" style="height: 85%;"></div>
-                    <div class="histogram__bar" style="height: 50%;"></div>
-                    <div class="histogram__bar" style="height: 65%;"></div>
-                    <div class="histogram__bar" style="height: 20%;"></div>
-                    <div class="histogram__bar" style="height: 75%;"></div>
-                    <div class="histogram__bar" style="height: 40%;"></div>
-                    <div class="histogram__bar" style="height: 60%;"></div>
-                    <div class="histogram__bar" style="height: 85%;"></div>
-                    <div class="histogram__bar" style="height: 25%;"></div>
-                    <div class="histogram__bar" style="height: 70%;"></div>
-                    <div class="histogram__bar" style="height: 35%;"></div>
-                    <div class="histogram__bar" style="height: 80%;"></div>
-                    <div class="histogram__bar" style="height: 45%;"></div>
-                    <div class="histogram__bar" style="height: 55%;"></div>
-                    <div class="histogram__bar" style="height: 70%;"></div>
-                    <div class="histogram__bar" style="height: 30%;"></div>
-                    <div class="histogram__bar" style="height: 65%;"></div>
-                    <div class="histogram__bar" style="height: 50%;"></div>
-                    <div class="histogram__bar" style="height: 75%;"></div>
-                    <div class="histogram__bar" style="height: 40%;"></div>
-                    <div class="histogram__bar" style="height: 60%;"></div>
-                    <div class="histogram__bar" style="height: 85%;"></div>
-                    <div class="histogram__bar" style="height: 25%;"></div>
-                    <div class="histogram__bar" style="height: 70%;"></div>
-                </div>
-            </div>
-        </div>
+<button class="modal__open" id="_modal-open">Open modal</button>
+<div class="modal" id="_modal">
+    <div class="modal__window">
+        <button class="modal__close" id="_modal-close">
+            <svg width="24" height="24">
+                <use href="../../assets/images/icons.svg#button_x"></use>
+            </svg>
+        </button>
+        <h3 class="modal_title">Modal title</h3>
+        <p class="modal__text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                                    Velit officia consequat duis enim velit mollit.
+                                    Exercitation veniam consequat sunt nostrud amet.
+                                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                                    Velit officia consequat duis enim velit mollit.
+                                    Exercitation veniam consequat sunt nostrud amet.
+        </p>
+    </div>
+</div>
                                                 </code>
                                             </pre>
                                         </figure>
@@ -159,40 +99,93 @@
                                         <figure>
                                             <pre>
                                                 <code data-language="css">
- .histogram {
-  padding: 16px 24px 24px;
-  color: var(--black);
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
+ .modal {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    background-color: rgba(196, 196, 196, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
-.histogram__title {
-  opacity: 0.8;
+ .modal__window {
+    padding: 30px 40px;
+    max-width: 458px;
+    border-radius: 8px;
+    border: 1px solid var(--grey-3);
+    background: var(--white);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-.histogram__orders {
-  font-size: 20px;
-  line-height: 26px;
+ .modal__window_main-page {
+    padding: 16px 24px 24px 24px;
+    position: relative;
+    transform: none;
+    top: 0;
+    left: 0;
+    max-width: 200px;
 }
 
-.histogram__chart {
-  display: flex;
-  gap: 1px;
-  align-items: flex-end;
-  height: 50px;
+ .modal__open {
+    display: inline-flex;
+    justify-content: center;
+    height: 3rem;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.2;
+    font-family: "Roboto", sans-serif;
+    padding: 0.875rem 1rem;
+    text-align: center;
+    border-radius: 0.5rem;
+    border: none;
+    box-shadow: none;
+    cursor: pointer;
+    transition: all 0.2s linear;
+    color: white;
+    background-color: var(--primary);
+    max-width: 200px;
 }
 
-.histogram__bar {
-  flex: 1;
-  background-color: var(--blue);
+ .modal__open:hover {
+    background-color: var(--primary-hover);
 }
 
-.histogram_main-page {
-  flex-grow: 1;
-  border-radius: 8px;
-  border: 1px solid var(--grey-3);
+ .modal__close {
+    background: var(--white);
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    padding: 0;
+    border: 0;
+}
+
+ .modal__close:hover {
+    cursor: pointer;
+}
+ .modal__title {
+    color: #334D6E;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+ .modal__title_main-page {
+    margin-top: 0;
+}
+
+ .modal__text {
+    color: var(--grey-4);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
 }
                                                 </code>
                                             </pre>
@@ -209,4 +202,5 @@
         <script src="../assets/js/rainbow-custom.min.js"></script>
         <script src="../assets/js/rainbow.js"></script>
     </body>
+    <script src="../05-lection3/02-modal/index.js"></script>
 </html>
