@@ -8,6 +8,9 @@
     transition: var(--transition);
     cursor: pointer;
     @include text(null, 16px, normal, 500, normal);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     &__block {
         display: grid;

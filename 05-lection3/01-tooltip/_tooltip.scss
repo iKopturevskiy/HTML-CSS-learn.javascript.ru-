@@ -34,7 +34,12 @@
         transform: translateX(-50%);
     }
 
-    &__trigger:hover ~ .tooltip__bubble {
+    &__trigger:hover &__bubble {
         display: block;
+    }
+
+    &__component {
+        margin: 70px 0 30px 35px;
+        position: relative;
     }
 }
