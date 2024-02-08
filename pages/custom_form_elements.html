@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Template</title>
+        <title>Custom form elements</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="../dist/styles.css">
     </head>
@@ -34,179 +34,138 @@
                         </div>
                     </aside>
                     <div class="info">
-                        <h2>Histogram</h2>
-                        <div class="histogram histogram_main-page">
-                            <div class="histogram__top">
-                                <div class="histogram__total-orders">
-                                    <p class="histogram__title">Total orders</p>
-                                    <h4 class="histogram__orders">50254</h4>
+                        <h2>Custom form elements</h2>
+                        <div class="container__custom-elements">
+                            <label for="radio7" class="radio">
+                                <input type="radio" id="radio7" name="radio-name3" value="1" class="radio__input" checked="checked">
+                                <div class="radio__state">
+                                    <div class="radio__control">
+                                        <div class="radio__checked"></div>
+                                    </div>
+                                    <span class="radio__title">Male</span>
                                 </div>
-                                <div class="histogram__view">
-                                    <a href="" class="histogram__href">View all</a>
+                            </label>
+                            <label for="radio8" class="radio">
+                                <input type="radio" id="radio8" name="radio-name3" value="1" class="radio__input">
+                                <div class="radio__state">
+                                    <div class="radio__control">
+                                        <div class="radio__checked"></div>
+                                    </div>
+                                    <span class="radio__title">Female</span>
                                 </div>
-                            </div>
-                            <div class="histogram__bottom">
-                                <div class="histogram__chart">
-                                    <div class="histogram__bar" style="height: 80%;"></div>
-                                    <div class="histogram__bar" style="height: 60%;"></div>
-                                    <div class="histogram__bar" style="height: 40%;"></div>
-                                    <div class="histogram__bar" style="height: 70%;"></div>
-                                    <div class="histogram__bar" style="height: 90%;"></div>
-                                    <div class="histogram__bar" style="height: 45%;"></div>
-                                    <div class="histogram__bar" style="height: 55%;"></div>
-                                    <div class="histogram__bar" style="height: 75%;"></div>
-                                    <div class="histogram__bar" style="height: 30%;"></div>
-                                    <div class="histogram__bar" style="height: 85%;"></div>
-                                    <div class="histogram__bar" style="height: 50%;"></div>
-                                    <div class="histogram__bar" style="height: 65%;"></div>
-                                    <div class="histogram__bar" style="height: 20%;"></div>
-                                    <div class="histogram__bar" style="height: 75%;"></div>
-                                    <div class="histogram__bar" style="height: 40%;"></div>
-                                    <div class="histogram__bar" style="height: 60%;"></div>
-                                    <div class="histogram__bar" style="height: 85%;"></div>
-                                    <div class="histogram__bar" style="height: 25%;"></div>
-                                    <div class="histogram__bar" style="height: 70%;"></div>
-                                    <div class="histogram__bar" style="height: 35%;"></div>
-                                    <div class="histogram__bar" style="height: 80%;"></div>
-                                    <div class="histogram__bar" style="height: 45%;"></div>
-                                    <div class="histogram__bar" style="height: 55%;"></div>
-                                    <div class="histogram__bar" style="height: 70%;"></div>
-                                    <div class="histogram__bar" style="height: 30%;"></div>
-                                    <div class="histogram__bar" style="height: 65%;"></div>
-                                    <div class="histogram__bar" style="height: 50%;"></div>
-                                    <div class="histogram__bar" style="height: 75%;"></div>
-                                    <div class="histogram__bar" style="height: 40%;"></div>
-                                    <div class="histogram__bar" style="height: 60%;"></div>
-                                    <div class="histogram__bar" style="height: 85%;"></div>
-                                    <div class="histogram__bar" style="height: 25%;"></div>
-                                    <div class="histogram__bar" style="height: 70%;"></div>
+                            </label>
+                            <label for="radio9" class="radio">
+                                <input type="radio" id="radio9" name="radio-name3" value="1" class="radio__input" disabled>
+                                <div class="radio__state">
+                                    <div class="radio__control">
+                                        <div class="radio__checked"></div>
+                                    </div>
+                                    <span class="radio__title">Special</span>
                                 </div>
-                            </div>
+                            </label>
+                            <label for="checkbox7" class="checkbox">
+                                <input type="checkbox" id="checkbox7" class="checkbox__input" checked="checked">
+                                <div class="checkbox__state">
+                                    <div class="checkbox__control">
+                                        <svg width="15" height="13" fill="none" class="checkbox__icon">
+                                            <use href="../../assets/images/icons.svg#checkbox"></use>
+                                        </svg>
+                                    </div>
+                                    <span class="checkbox__title">Default</span>
+                                </div>
+                            </label>
+                            <label for="checkbox8" class="checkbox">
+                                <input type="checkbox" id="checkbox8" class="checkbox__input">
+                                <div class="checkbox__state">
+                                    <div class="checkbox__control">
+                                        <svg width="15" height="13" fill="none" class="checkbox__icon">
+                                            <use href="../../assets/images/icons.svg#checkbox"></use>
+                                        </svg>
+                                    </div>
+                                    <span class="checkbox__title">Default</span>
+                                </div>
+                            </label>
+                            <label for="checkbox9" class="checkbox">
+                                <input type="checkbox" id="checkbox9" class="checkbox__input" disabled>
+                                <div class="checkbox__state">
+                                    <div class="checkbox__control">
+                                        <svg width="15" height="13" fill="none" class="checkbox__icon">
+                                            <use href="../../assets/images/icons.svg#checkbox"></use>
+                                        </svg>
+                                    </div>
+                                    <span class="checkbox__title">Default</span>
+                                </div>
+                            </label>
+                            <label for="toggle" class="toggle">
+                                <input type="checkbox" id="toggle" class="toggle__input" checked="checked">
+                                <div class="toggle__state">
+                                    <div class="toggle__control">
+                                        <div class="toggle__point"></div>
+                                    </div>
+                                    <span class="toggle__title">Toggle</span>
+                                </div>
+                            </label>
+                            <label for="toggle2" class="toggle">
+                                <input type="checkbox" id="toggle2" class="toggle__input">
+                                <div class="toggle__state">
+                                    <div class="toggle__control">
+                                        <div class="toggle__point"></div>
+                                    </div>
+                                    <span class="toggle__title">Toggle</span>
+                                </div>
+                            </label>
+                            <label for="toggle3" class="toggle">
+                                <input type="checkbox" id="toggle3" class="toggle__input" disabled>
+                                <div class="toggle__state">
+                                    <div class="toggle__control">
+                                        <div class="toggle__point"></div>
+                                    </div>
+                                    <span class="toggle__title">Toggle</span>
+                                </div>
+                            </label>
                         </div>
-                        <div class="info__code">
-                            <section>
-                                <input checked="checked" id="nav1" type="radio" name="nav">
-                                <input id="nav2" type="radio" name="nav">
-                                <nav>
-                                    <ul class="container navigation__list navigation_component">
-                                        <li>
-                                            <label class="navigation__point navigation__point-1" for="nav1">HTML</label>
-                                        </li>
-                                        <li>
-                                            <label class="navigation__point navigation__point-2" for="nav2">CSS</label>
-                                        </li>
-                                    </ul>
-                                </nav>
-                                <div class="navigation__line navigation__line_component"></div>
-                                <div class="navigation__pages navigation__pages_components">
-                                    <div class="container navigation__page navigation__page-1">
-                                        <figure>
-                                            <pre>
-                                                <code data-language="html">
-<div class="histogram">
-            <div class="histogram__top">
-                <div class="histogram__total-orders">
-                    <p class="histogram__title">Total orders</p>
-                    <h4 class="histogram__orders">50254</h4>
-                </div>
-                <div class="histogram__view">
-                        <a href="" class="histogram__href">View all</a>
-                </div>
-            </div>
-            <div class="histogram__bottom">
-                <div class="histogram__chart">
-                    <div class="histogram__bar" style="height: 80%;"></div>
-                    <div class="histogram__bar" style="height: 60%;"></div>
-                    <div class="histogram__bar" style="height: 40%;"></div>
-                    <div class="histogram__bar" style="height: 70%;"></div>
-                    <div class="histogram__bar" style="height: 90%;"></div>
-                    <div class="histogram__bar" style="height: 45%;"></div>
-                    <div class="histogram__bar" style="height: 55%;"></div>
-                    <div class="histogram__bar" style="height: 75%;"></div>
-                    <div class="histogram__bar" style="height: 30%;"></div>
-                    <div class="histogram__bar" style="height: 85%;"></div>
-                    <div class="histogram__bar" style="height: 50%;"></div>
-                    <div class="histogram__bar" style="height: 65%;"></div>
-                    <div class="histogram__bar" style="height: 20%;"></div>
-                    <div class="histogram__bar" style="height: 75%;"></div>
-                    <div class="histogram__bar" style="height: 40%;"></div>
-                    <div class="histogram__bar" style="height: 60%;"></div>
-                    <div class="histogram__bar" style="height: 85%;"></div>
-                    <div class="histogram__bar" style="height: 25%;"></div>
-                    <div class="histogram__bar" style="height: 70%;"></div>
-                    <div class="histogram__bar" style="height: 35%;"></div>
-                    <div class="histogram__bar" style="height: 80%;"></div>
-                    <div class="histogram__bar" style="height: 45%;"></div>
-                    <div class="histogram__bar" style="height: 55%;"></div>
-                    <div class="histogram__bar" style="height: 70%;"></div>
-                    <div class="histogram__bar" style="height: 30%;"></div>
-                    <div class="histogram__bar" style="height: 65%;"></div>
-                    <div class="histogram__bar" style="height: 50%;"></div>
-                    <div class="histogram__bar" style="height: 75%;"></div>
-                    <div class="histogram__bar" style="height: 40%;"></div>
-                    <div class="histogram__bar" style="height: 60%;"></div>
-                    <div class="histogram__bar" style="height: 85%;"></div>
-                    <div class="histogram__bar" style="height: 25%;"></div>
-                    <div class="histogram__bar" style="height: 70%;"></div>
-                </div>
-            </div>
-        </div>
-                                                </code>
-                                            </pre>
-                                        </figure>
-                                    </div>
-                                    <div class="container navigation__page navigation__page-2">
-                                        <figure>
-                                            <pre>
-                                                <code data-language="css">
- .histogram {
-  padding: 16px 24px 24px;
-  color: var(--black);
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-}
-
-.histogram__title {
-  opacity: 0.8;
-}
-
-.histogram__orders {
-  font-size: 20px;
-  line-height: 26px;
-}
-
-.histogram__chart {
-  display: flex;
-  gap: 1px;
-  align-items: flex-end;
-  height: 50px;
-}
-
-.histogram__bar {
-  flex: 1;
-  background-color: var(--blue);
-}
-
-.histogram_main-page {
-  flex-grow: 1;
-  border-radius: 8px;
-  border: 1px solid var(--grey-3);
-}
-                                                </code>
-                                            </pre>
-                                        </figure>
-                                    </div>
+                        <div class="form__container">
+                            <form class="form">
+                                <label for="input_text" class="form__title">input_text</label>
+                                <div class="form__wrapper">
+                                    <input type="text" id="input_text" class="form__input" placeholder="Placeholder">
+                                    <svg width="24" height="24" fill="none" class="form__icon form__icon_success">
+                                        <use href="../../assets/images/icons.svg#success"></use>
+                                    </svg>
+                                    <svg width="24" height="24" fill="none" class="form__icon form__icon_error">
+                                        <use href="../../assets/images/icons.svg#error"></use>
+                                    </svg>
                                 </div>
-                            </section>
+                            </form>
+                            <form class="form form_error">
+                                <label for="input_text2" class="form__title">input_text</label>
+                                <div class="form__wrapper">
+                                    <input type="text" id="input_text2" class="form__input" placeholder="Placeholder">
+                                    <svg width="24" height="24" fill="none" class="form__icon form__icon_success">
+                                        <use href="../../assets/images/icons.svg#success"></use>
+                                    </svg>
+                                    <svg width="24" height="24" fill="none" class="form__icon form__icon_error">
+                                        <use href="../../assets/images/icons.svg#error"></use>
+                                    </svg>
+                                </div>
+                            </form>
+                            <form class="form form_success">
+                                <label for="input_text3" class="form__title">input_text</label>
+                                <div class="form__wrapper">
+                                    <input type="text" id="input_text3" class="form__input" placeholder="Placeholder">
+                                    <svg width="24" height="24" fill="none" class="form__icon form__icon_success">
+                                        <use href="../../assets/images/icons.svg#success"></use>
+                                    </svg>
+                                    <svg width="24" height="24" fill="none" class="form__icon form__icon_error">
+                                        <use href="../../assets/images/icons.svg#error"></use>
+                                    </svg>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
             </main>
             <footer class="footer footer_transparent-background">Reusable component library</footer>
         </div>
-        <script src="../assets/js/rainbow-custom.min.js"></script>
-        <script src="../assets/js/rainbow.js"></script>
     </body>
 </html>

@@ -212,6 +212,7 @@
   background: var(--white);
   padding: 32px 48px;
   border-radius: 8px;
+  max-width: 800px;
 }
 @media screen and (max-width: 768px) {
   .info {
@@ -231,6 +232,9 @@
   margin-top: 4rem;
   margin-bottom: 2rem;
   font-size: 1.7rem;
+}
+.html__code {
+  overflow-x: auto;
 }
 
 .navigation__list {

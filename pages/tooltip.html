@@ -43,7 +43,7 @@
                                 <div class="tooltip__bubble">Helper Text</div>
                             </div>
                         </div>
-                        <div class="info__code">
+                        <div>
                             <section>
                                 <input checked="checked" id="nav1" type="radio" name="nav">
                                 <input id="nav2" type="radio" name="nav">
@@ -61,16 +61,16 @@
                                 <div class="navigation__pages navigation__pages_components">
                                     <div class="container navigation__page navigation__page-1">
                                         <figure>
-                                            <pre>
-                                                <code data-language="html">
-<div class="tooltip">
-    <div class="tooltip__trigger tooltip__component">
-        <svg width="24" height="24">
-            <use href="../../assets/images/icons.svg#help"></use>
-        </svg>
-        <div class="tooltip__bubble">Helper Text</div>
-    </div>
-</div>
+                                            <pre class="html__code">
+                                                <code>
+&lt;div class="tooltip"&gt;
+    &lt;div class="tooltip__trigger tooltip__component"&gt;
+        &lt;svg width="24" height="24"&gt;
+            &lt;use href="../../assets/images/icons.svg#help"&gt;&lt;/use&gt;
+        &lt;/svg&gt;
+        &lt;div class="tooltip__bubble"&gt;Helper Text&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
                                                 </code>
                                             </pre>
                                         </figure>
@@ -78,7 +78,7 @@
                                     <div class="container navigation__page navigation__page-2">
                                         <figure>
                                             <pre>
-                                                <code data-language="css">
+                                                <code>
  .tooltip {
     display: inline-flex;
     position: relative;
@@ -137,7 +137,5 @@
             </main>
             <footer class="footer footer_transparent-background">Reusable component library</footer>
         </div>
-        <script src="../assets/js/rainbow-custom.min.js"></script>
-        <script src="../assets/js/rainbow.js"></script>
     </body>
 </html>
