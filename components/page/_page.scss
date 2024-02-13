@@ -13,7 +13,7 @@
 
     &__component {
       background-color: var(--grey-2);
-      padding: 16px 0;
+      padding: 0 16px 16px 16px;
     }
 
     &__main {
@@ -22,8 +22,12 @@
         grid-template-columns: auto 1fr;
         grid-column-gap: 56px;
 
-      @media screen and (max-width: 768px) {
+      @media (max-width: 768px) {
         grid-template-columns: 1fr;
       }
+    }
+
+    &__mobile-menu {
+      background-color: var(--white);
     }
 }

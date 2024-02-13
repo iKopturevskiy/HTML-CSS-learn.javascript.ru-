@@ -32,4 +32,21 @@
     &__link_changed {
         color: #D84910;
     }
+
+    &__burger {
+        display: none;
+        position: absolute;
+        left: 10%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+
+        @media (max-width: 768px) {
+            display: block;
+        }
+    }
+
+    &_mobile-menu {
+        display: block;
+        padding-left: 6%;
+    }
 }
