@@ -8,17 +8,22 @@
   .page {
     grid-template-columns: 1fr;
     grid-column-gap: 0;
-    height: 100%;
   }
 }
 .page__component {
   background-color: var(--grey-2);
+  padding: 16px 0;
 }
 .page__main {
   flex-grow: 1;
   display: grid;
   grid-template-columns: auto 1fr;
   grid-column-gap: 56px;
+}
+@media screen and (max-width: 768px) {
+  .page__main {
+    grid-template-columns: 1fr;
+  }
 }
 
 .header {
@@ -236,7 +241,8 @@
 }
 @media screen and (max-width: 768px) {
   .info {
-    padding: 16px 0;
+    padding: 16px;
+    overflow: auto;
   }
 }
 .info__img {
@@ -308,6 +314,14 @@
 }
 .navigation__page {
   display: none;
+}
+@media screen and (max-width: 768px) {
+  .navigation__page {
+    padding: 0 16px;
+  }
+}
+.navigation__page pre {
+  overflow-x: auto;
 }
 #nav1:checked ~ .navigation__pages .navigation__page-1, #nav2:checked ~ .navigation__pages .navigation__page-2, #nav3:checked ~ .navigation__pages .navigation__page-3, #nav4:checked ~ .navigation__pages .navigation__page-4 {
   display: block;

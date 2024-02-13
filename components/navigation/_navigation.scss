@@ -55,6 +55,14 @@
 
   &__page {
     display: none;
+
+    @media screen and (max-width: 768px) {
+      padding: 0 16px;
+    }
+  }
+
+  &__page pre {
+    overflow-x: auto;
   }
 
   #nav1:checked ~ &__pages &__page-1,
