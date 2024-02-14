@@ -10,6 +10,11 @@
     padding-inline-start: 0;
     padding: 10px 100px;
     background-color: var(--white);
+
+    @media (max-width: 768px) {
+      gap: 12px;
+      padding: 5px;
+    }
   }
 
   &__point {
@@ -50,6 +55,14 @@
 
   &__page {
     display: none;
+
+    @media screen and (max-width: 768px) {
+      padding: 0 16px;
+    }
+  }
+
+  &__page pre {
+    overflow-x: auto;
   }
 
   #nav1:checked ~ &__pages &__page-1,

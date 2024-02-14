@@ -7,20 +7,60 @@
         <link rel="stylesheet" href="../dist/styles.css">
     </head>
     <body>
-        <div class="page page__component">
-            <header class="header header_transparent-background">
-                <div class="container">
-                    <div class="header__logo">
-                        <a href="../index.html">
-                            <svg width="110" height="32">
-                                <use href="../assets/images/icons.svg#rectangle"></use>
-                            </svg>
-                        </a>
-                    </div>
+    <div class="page page__component">
+        <div class="aside__mobile-navigation" id="modal-menu">
+            <div class="container container__mobile-menu">
+                <div class="aside__burger aside__burger_mobile-navigation">
+                    <button id="modal-close-menu" class="modal__open_mobile-menu">
+                        <svg width="24" height="24">
+                            <use href="../../assets/images/icons.svg#button_x"></use>
+                        </svg>
+                    </button>
                 </div>
-            </header>
+                <div class="header__logo">
+                    <a href="../index.html">
+                        <svg width="110" height="32">
+                            <use href="../assets/images/icons.svg#rectangle"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="navigation__line"></div>
+            <div class="container page__main">
+                <aside class="aside aside_mobile-menu">
+                    <h3 class="container__title">Components</h3>
+                    <div class="aside__navigation">
+                        <a href="./tooltip.html" class="aside__link">Tooltip</a>
+                        <a href="./modal.html" class="aside__link">Modal</a>
+                        <a href="" class="aside__link aside__link_changed">Histogram</a>
+                        <a href="./avatar.html" class="aside__link">Avatar</a>
+                        <a href="./custom_form_elements.html" class="aside__link">Custom form elements</a>
+                        <a href="./calendar.html" class="aside__link">Calendar</a>
+                        <a href="../index.html" class="aside__link">Main page</a>
+                    </div>
+                </aside>
+            </div>
+        </div>
+        <header class="header header_transparent-background">
+            <div class="container">
+                <div class="aside__burger">
+                    <button id="modal-open-menu" class="modal__open_mobile-menu">
+                        <svg width="24" height="24">
+                            <use href="../assets/images/icons.svg#mobile-menu"></use>
+                        </svg>
+                    </button>
+                </div>
+                <div class="header__logo">
+                    <a href="../index.html">
+                        <svg width="110" height="32">
+                            <use href="../assets/images/icons.svg#rectangle"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </header>
             <main class="preview">
-                <div class="container page__main">
+                <div class="container page__main container_mobile">
                     <aside class="aside">
                         <h3 class="container__title">Components</h3>
                         <div class="aside__navigation">
@@ -83,7 +123,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="info__code">
+                        <div>
                             <section>
                                 <input checked="checked" id="nav1" type="radio" name="nav">
                                 <input id="nav2" type="radio" name="nav">
@@ -101,56 +141,56 @@
                                 <div class="navigation__pages navigation__pages_components">
                                     <div class="container navigation__page navigation__page-1">
                                         <figure>
-                                            <pre>
-                                                <code data-language="html">
-<div class="histogram">
-    <div class="histogram__top">
-        <div class="histogram__total-orders">
-            <p class="histogram__title">Total orders</p>
-            <h4 class="histogram__orders">50254</h4>
-        </div>
-        <div class="histogram__view">
-            <a href="" class="histogram__href">View all</a>
-        </div>
-    </div>
-    <div class="histogram__bottom">
-        <div class="histogram__chart">
-            <div class="histogram__bar" style="height: 80%;"></div>
-            <div class="histogram__bar" style="height: 60%;"></div>
-            <div class="histogram__bar" style="height: 40%;"></div>
-            <div class="histogram__bar" style="height: 70%;"></div>
-            <div class="histogram__bar" style="height: 90%;"></div>
-            <div class="histogram__bar" style="height: 45%;"></div>
-            <div class="histogram__bar" style="height: 55%;"></div>
-            <div class="histogram__bar" style="height: 75%;"></div>
-            <div class="histogram__bar" style="height: 30%;"></div>
-            <div class="histogram__bar" style="height: 85%;"></div>
-            <div class="histogram__bar" style="height: 50%;"></div>
-            <div class="histogram__bar" style="height: 65%;"></div>
-            <div class="histogram__bar" style="height: 20%;"></div>
-            <div class="histogram__bar" style="height: 75%;"></div>
-            <div class="histogram__bar" style="height: 40%;"></div>
-            <div class="histogram__bar" style="height: 60%;"></div>
-            <div class="histogram__bar" style="height: 85%;"></div>
-            <div class="histogram__bar" style="height: 25%;"></div>
-            <div class="histogram__bar" style="height: 70%;"></div>
-            <div class="histogram__bar" style="height: 35%;"></div>
-            <div class="histogram__bar" style="height: 80%;"></div>
-            <div class="histogram__bar" style="height: 45%;"></div>
-            <div class="histogram__bar" style="height: 55%;"></div>
-            <div class="histogram__bar" style="height: 70%;"></div>
-            <div class="histogram__bar" style="height: 30%;"></div>
-            <div class="histogram__bar" style="height: 65%;"></div>
-            <div class="histogram__bar" style="height: 50%;"></div>
-            <div class="histogram__bar" style="height: 75%;"></div>
-            <div class="histogram__bar" style="height: 40%;"></div>
-            <div class="histogram__bar" style="height: 60%;"></div>
-            <div class="histogram__bar" style="height: 85%;"></div>
-            <div class="histogram__bar" style="height: 25%;"></div>
-            <div class="histogram__bar" style="height: 70%;"></div>
-        </div>
-    </div>
-</div>
+                                            <pre class="html__code">
+                                                <code>
+&lt;div class="histogram"&gt;
+    &lt;div class="histogram__top"&gt;
+        &lt;div class="histogram__total-orders"&gt;
+            &lt;p class="histogram__title"&gt;Total orders&lt;/p&gt;
+            &lt;h4 class="histogram__orders"&gt;50254&lt;/h4&gt;
+        &lt;/div&gt;
+        &lt;div class="histogram__view"&gt;
+            &lt;a href="" class="histogram__href"&gt;View all&lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="histogram__bottom"&gt;
+        &lt;div class="histogram__chart"&gt;
+            &lt;div class="histogram__bar" style="height: 80%;"&gt;&lt;/div&gt;
+            &lt;div class="histogram__bar" style="height: 60%;"&gt;&lt;/div&gt;
+            &lt;div class="histogram__bar" style="height: 40%;"&gt;&lt;/div&gt;
+            &lt;div class="histogram__bar" style="height: 70%;"&gt;&lt;/div&gt;
+            &lt;div class="histogram__bar" style="height: 90%;"&gt;&lt;/div&gt;
+            &lt;div class="histogram__bar" style="height: 45%;"&gt;&lt;/div&gt;
+            &lt;div class="histogram__bar" style="height: 55%;"&gt;&lt;/div&gt;
+            &lt;div class="histogram__bar" style="height: 75%;"&gt;&lt;/div&gt;
+            &lt;div class="histogram__bar" style="height: 30%;"&gt;&lt;/div&gt;
+            &lt;div class="histogram__bar" style="height: 85%;"&gt;&lt;/div&gt;
+            &lt;div class="histogram__bar" style="height: 50%;"&gt;&lt;/div&gt;
+            &lt;div class="histogram__bar" style="height: 65%;"&gt;&lt;/div&gt;
+            &lt;div class="histogram__bar" style="height: 20%;"&gt;&lt;/div&gt;
+            &lt;div class="histogram__bar" style="height: 75%;"&gt;&lt;/div&gt;
+            &lt;div class="histogram__bar" style="height: 40%;"&gt;&lt;/div&gt;
+            &lt;div class="histogram__bar" style="height: 60%;"&gt;&lt;/div&gt;
+            &lt;div class="histogram__bar" style="height: 85%;"&gt;&lt;/div&gt;
+            &lt;div class="histogram__bar" style="height: 25%;"&gt;&lt;/div&gt;
+            &lt;div class="histogram__bar" style="height: 70%;"&gt;&lt;/div&gt;
+            &lt;div class="histogram__bar" style="height: 35%;"&gt;&lt;/div&gt;
+            &lt;div class="histogram__bar" style="height: 80%;"&gt;&lt;/div&gt;
+            &lt;div class="histogram__bar" style="height: 45%;"&gt;&lt;/div&gt;
+            &lt;div class="histogram__bar" style="height: 55%;"&gt;&lt;/div&gt;
+            &lt;div class="histogram__bar" style="height: 70%;"&gt;&lt;/div&gt;
+            &lt;div class="histogram__bar" style="height: 30%;"&gt;&lt;/div&gt;
+            &lt;div class="histogram__bar" style="height: 65%;"&gt;&lt;/div&gt;
+            &lt;div class="histogram__bar" style="height: 50%;"&gt;&lt;/div&gt;
+            &lt;div class="histogram__bar" style="height: 75%;"&gt;&lt;/div&gt;
+            &lt;div class="histogram__bar" style="height: 40%;"&gt;&lt;/div&gt;
+            &lt;div class="histogram__bar" style="height: 60%;"&gt;&lt;/div&gt;
+            &lt;div class="histogram__bar" style="height: 85%;"&gt;&lt;/div&gt;
+            &lt;div class="histogram__bar" style="height: 25%;"&gt;&lt;/div&gt;
+            &lt;div class="histogram__bar" style="height: 70%;"&gt;&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
                                                 </code>
                                             </pre>
                                         </figure>
@@ -158,7 +198,7 @@
                                     <div class="container navigation__page navigation__page-2">
                                         <figure>
                                             <pre>
-                                                <code data-language="css">
+                                                <code>
  .histogram {
     padding: 16px 24px 24px;
     color: var(--black);
@@ -177,7 +217,27 @@
     line-height: 26px;
 }
 
+ .histogram__href {
+    pointer-events: none;
+}
+
+ @keyframes moveUp {
+  0% {
+    transform: scaleY(0);
+    transform-origin: bottom center;
+  }
+  50% {
+    transform: scaleY(0);
+    transform-origin: bottom center;
+  }
+  100% {
+    transform: scaleY(1);
+    transform-origin: bottom center;
+  }
+}
+
  .histogram__chart {
+    animation: moveUp 0.6s ease-out;
     display: flex;
     gap: 1px;
     align-items: flex-end;
@@ -206,7 +266,6 @@
             </main>
             <footer class="footer footer_transparent-background">Reusable component library</footer>
         </div>
-        <script src="../assets/js/rainbow-custom.min.js"></script>
-        <script src="../assets/js/rainbow.js"></script>
     </body>
+    <script src="../assets/js/index.js"></script>
 </html>

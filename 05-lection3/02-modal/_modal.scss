@@ -5,6 +5,7 @@
     @include widthAndHeight(100vw, 100vh);
     margin: 0;
     @include positionAndBackground(rgba(196, 196, 196, 0.5), null, fixed, 0, 0, null, null);
+    z-index: 1;
 
     &__window {
         padding: 30px 40px;
@@ -13,6 +14,10 @@
         border: 1px solid var(--grey-3);
         @include positionAndBackground(null, var(--white), absolute, 50%, 50%, null, null);
         transform: translate(-50%, -50%);
+
+        @media (max-width: 768px) {
+            padding: 10px;
+        }
     }
 
     &__window_main-page {
@@ -40,6 +45,11 @@
         color: white;
         background-color: var(--primary);
         max-width: 200px;
+    }
+
+    &__open_mobile-menu {
+        background-color: transparent;
+        border: none;
     }
 
     &__open:hover {

@@ -28,6 +28,10 @@
         @include text(var(--grey-4), 20px, normal, 400, 26px);
         padding-left: 24px;
         @include border(1px solid var(--grey-2), 8px, null);
+
+        @media (max-width: 768px) {
+            width: auto;
+        }
     }
 
     &__input:focus {

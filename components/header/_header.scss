@@ -11,23 +11,10 @@
     &__title {
         @include text(var(--grey-4, #495057), 1.75rem, normal, 400, 2.375rem);
 
-        @media screen and (min-width: 768px) {
-                font-size: 2.09rem;
-                //padding: 16px 71px 0 16px;
+        @media screen and (max-width: 768px) {
+                font-size: 1.8rem;
+                padding: 0 16px;
         }
-
-        @media screen and (min-width: 992px) {
-                font-size: 2.43rem;
-        }
-
-        @media screen and (min-width: 1200px) {
-                font-size: 2.78rem;
-        }
-
-        @media screen and (min-width: 1400px) {
-                font-size: 3.16rem;
-        }
-
     }
 
     &_transparent-background {
