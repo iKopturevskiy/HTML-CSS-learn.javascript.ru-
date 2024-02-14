@@ -6,6 +6,10 @@
     width: 100%;
     max-width: 300px;
 
+    @media (max-width: 768px) {
+        width: auto;
+    }
+
     &__title {
         @include text(#334D6E, 20px, normal, 600, 24px);
         margin-bottom: 24px;

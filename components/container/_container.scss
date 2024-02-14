@@ -16,6 +16,10 @@
         }
     }
 
+    &__mobile-menu {
+        padding: 16px 0;
+    }
+
     &__title {
         @include text(var(--grey-3), 20px, normal, 400, 26px);
     }

@@ -7,15 +7,48 @@
     </head>
     <body class="body">
         <div class="page">
+            <div class="aside__mobile-navigation" id="modal-menu">
+                <div class="container container__mobile-menu">
+                    <div class="aside__burger aside__burger_mobile-navigation">
+                        <button id="modal-close-menu" class="modal__open_mobile-menu">
+                            <svg width="24" height="24">
+                                <use href="../../assets/images/icons.svg#button_x"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="header__logo">
+                        <a href="">
+                            <svg width="110" height="32">
+                                <use href="../assets/images/icons.svg#rectangle"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="navigation__line"></div>
+                <div class="container page__main">
+                    <aside class="aside aside_mobile-menu">
+                        <h3 class="container__title">Components</h3>
+                        <div class="aside__navigation">
+                            <a href="./pages/tooltip.html" class="aside__link">Tooltip</a>
+                            <a href="./pages/modal.html" class="aside__link">Modal</a>
+                            <a href="./pages/histogram.html" class="aside__link">Histogram</a>
+                            <a href="./pages/avatar.html" class="aside__link">Avatar</a>
+                            <a href="./pages/custom_form_elements.html" class="aside__link">Custom form elements</a>
+                            <a href="./pages/calendar.html" class="aside__link">Calendar</a>
+                            <a href="./index.html" class="aside__link aside__link_changed">Main page</a>
+                        </div>
+                    </aside>
+                </div>
+            </div>
             <header class="header">
                 <div class="container">
                     <div class="container_mobile">
                         <div class="aside__burger">
-                            <a href="./pages/mobile-menu.html">
+                            <button id="modal-open-menu" class="modal__open_mobile-menu">
                                 <svg width="24" height="24">
                                     <use href="../assets/images/icons.svg#mobile-menu"></use>
                                 </svg>
-                            </a>
+                            </button>
                         </div>
                         <div class="header__logo">
                             <a href="./index.html">
@@ -782,6 +815,7 @@
                 </p>
             </footer>
         </div>
-        <script src="05-lection3/02-modal/index.js"></script>
+        <script src="./assets/js/index.js"></script>
+
     </body>
 </html>

@@ -5,6 +5,7 @@
     @include widthAndHeight(100vw, 100vh);
     margin: 0;
     @include positionAndBackground(rgba(196, 196, 196, 0.5), null, fixed, 0, 0, null, null);
+    z-index: 1;
 
     &__window {
         padding: 30px 40px;
@@ -44,6 +45,11 @@
         color: white;
         background-color: var(--primary);
         max-width: 200px;
+    }
+
+    &__open_mobile-menu {
+        background-color: transparent;
+        border: none;
     }
 
     &__open:hover {
