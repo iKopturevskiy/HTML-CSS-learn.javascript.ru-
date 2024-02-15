@@ -2,14 +2,17 @@
 
 .navigation {
 
+  &__container {
+    background-color: var(--white-to-black);;
+  }
+
   &__list {
     @include text(var(--grey-3), 16px, normal, 400, 24px);
     display: flex;
     list-style-type: none;
     gap: 40px;
     padding-inline-start: 0;
-    padding: 10px 100px;
-    background-color: var(--white);
+    padding: 10px 0;
 
     @media (max-width: 768px) {
       gap: 12px;
@@ -30,14 +33,14 @@
     height: 5px;
     width: 100%;
     top: 100%;
-    background-color: var(--black);
+    background-color: var(--black-to-white);
     transform: scaleX(0);
     transition: transform 250ms ease-in-out;
   }
 
   &__line {
     height: 1px;
-    background-color: var(--grey-3);
+    background-color: var(--grey-4-to-grey-3);
   }
 
   &__list label {
@@ -46,7 +49,7 @@
 
   &__pages {
     padding: 48px 0;
-    background-color: var(--grey-2);
+    background-color: var(--grey-2-to-grey-3);
   }
 
   &__pages_components {
@@ -87,7 +90,7 @@
   #nav4:checked ~ nav &__list &__point-4,
   &__point:hover
   {
-    color: var(--black);
+    color: var(--black-to-white);
   }
 
   &_component {

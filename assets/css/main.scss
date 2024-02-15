@@ -47,6 +47,19 @@
     --primary: var(--blue);
     --secondary: var(--purple);
     --transition: opacity 200ms ease-in-out, background 200ms ease-in-out, border 200ms ease-in-out;
+
+    --white-to-black: var(--white);
+    --black-to-white: var(--black);
+    --grey-4-to-grey-3: var(--grey-4);
+    --grey-2-to-grey-3: var(--grey-2);
+}
+
+
+html[data-theme-dark] {
+    --white-to-black: var(--black);
+    --black-to-white: var(--white);
+    --grey-4-to-grey-3: var(--grey-3);
+    --grey-2-to-grey-3: var(--grey-4);
 }
 
 html, body {

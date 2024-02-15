@@ -42,6 +42,23 @@
             </div>
             <header class="header">
                 <div class="container">
+                    <div class="container__switch-theme">
+                        <label for="theme-changer" class="toggle">
+                            <input type="checkbox" id="theme-changer" class="toggle__input">
+                            <div class="toggle__state">
+                                <svg width="24" height="24">
+                                    <use href="./assets/images/icons.svg#sun"></use>
+                                </svg>
+                                <div class="toggle__control">
+                                    <div class="toggle__point"></div>
+                                </div>
+                                <svg width="24" height="24">
+                                    <use href="./assets/images/icons.svg#moon"></use>
+                                </svg>
+                            </div>
+                        </label>
+
+                    </div>
                     <div class="container_mobile">
                         <div class="aside__burger">
                             <button id="modal-open-menu" class="modal__open_mobile-menu">
@@ -52,8 +69,17 @@
                         </div>
                         <div class="header__logo">
                             <a href="./index.html">
-                                <svg width="110" height="32">
-                                    <use href="../assets/images/icons.svg#rectangle"></use>
+                                <svg width="110" height="32" viewBox="0 0 110 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_16746_155)">
+                                        <rect y="1" width="30" height="30" fill="#212429"/>
+                                        <rect x="38" width="32" height="32" rx="16" fill="#212429"/>
+                                        <path d="M78 0L110 32H78V0Z" fill="#212429"/>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_16746_155">
+                                            <rect width="110" height="32" fill="white"/>
+                                        </clipPath>
+                                    </defs>
                                 </svg>
                             </a>
                         </div>
@@ -67,7 +93,7 @@
                     <input id="nav2" type="radio" name="nav">
                     <input id="nav3" type="radio" name="nav">
                     <input id="nav4" type="radio" name="nav">
-                    <nav>
+                    <nav class="navigation__container">
                         <ul class="container navigation__list">
                             <li>
                                 <label class="navigation__point navigation__point-1" for="nav1">All components</label>
@@ -83,7 +109,7 @@
                             </li>
                         </ul>
                     </nav>
-                    <div class="navigation__line navigation__line_component"></div>
+                    <div class="navigation__line"></div>
                     <div class="navigation__pages">
                         <div class="container navigation__page navigation__page-1">
                         <div class="preview__cards">
@@ -808,7 +834,7 @@
             </main>
             <footer class="footer">
                 <h2>About</h2>
-                <p>This project is a collection of professionally designed, pre-built,
+                <p class="footer__paragraph">This project is a collection of professionally designed, pre-built,
                     fully responsive HTML snippets you can drop into your projects.
                     Get started by checking out our free preview components,
                     or browsing the PNG previews in the categories you're most curious about.
@@ -816,6 +842,7 @@
             </footer>
         </div>
         <script src="./assets/js/index.js"></script>
-
     </body>
+    <script src="./10-lection8/01-theme-changer/theme-changer.js"></script>
 </html>
+
