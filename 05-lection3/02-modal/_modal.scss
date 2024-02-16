@@ -76,6 +76,6 @@
     }
 
     &__text {
-        @include text(var(--grey-4-to-grey-2), 16px, normal, 400, 24px);
+        @include text(var(--grey-4-to-grey-3), 16px, normal, 400, 24px);
     }
 }
