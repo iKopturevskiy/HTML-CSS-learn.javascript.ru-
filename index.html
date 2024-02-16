@@ -27,8 +27,8 @@
                 <div class="navigation__line"></div>
                 <div class="navigation__switch-theme">
                     <div class="container__switch-theme  toggle__state_mobile">
-                        <label for="theme-changer" class="toggle">
-                            <input type="checkbox" id="theme-changer" class="toggle__input">
+                        <label for="theme-changer-mobile" class="toggle">
+                            <input type="checkbox" id="theme-changer-mobile" class="toggle__input">
                             <div class="toggle__state">
                                 <svg width="24" height="24" class="toggle__state_icons">
                                     <use href="../assets/images/icons.svg#sun"></use>
@@ -64,12 +64,28 @@
                     <div class="container_mobile">
                         <div class="aside__burger">
                             <button id="modal-open-menu" class="modal__open_mobile-menu">
-                                <svg width="24" height="24">
+                                <svg width="24" height="24" class="modal__open-burger-fill">
                                     <use href="../assets/images/icons.svg#mobile-menu"></use>
                                 </svg>
                             </button>
                         </div>
                         <div class="header__logo">
+                            <div class="container__switch-theme container__switch-theme_no-mobile">
+                                <label for="theme-changer" class="toggle">
+                                    <input type="checkbox" id="theme-changer" class="toggle__input">
+                                    <div class="toggle__state">
+                                        <svg width="24" height="24" class="toggle__state_icons">
+                                            <use href="../assets/images/icons.svg#sun"></use>
+                                        </svg>
+                                        <div class="toggle__control">
+                                            <div class="toggle__point"></div>
+                                        </div>
+                                        <svg width="24" height="24" class="toggle__state_icons">
+                                            <use href="../assets/images/icons.svg#moon"></use>
+                                        </svg>
+                                    </div>
+                                </label>
+                            </div>
                             <a href="./index.html">
                                 <svg width="110" height="32" class="header__logo_element">
                                     <use href="./assets/images/icons.svg#rectangle"></use>

@@ -53,7 +53,11 @@
     }
 
     &__open-fill {
-        fill: var(--black-to-white);
+        fill: var(--grey-4-to-grey-3);
+    }
+
+    &__open-burger-fill {
+        stroke: var(--grey-4-to-grey-3);
     }
 
     &__open:hover {

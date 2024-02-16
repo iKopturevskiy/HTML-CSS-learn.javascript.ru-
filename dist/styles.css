@@ -132,6 +132,11 @@
   z-index: 1;
 }
 @media (max-width: 768px) {
+  .container__switch-theme_no-mobile {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
   .container {
     padding: 0 16px;
   }
@@ -713,7 +718,10 @@
   border: none;
 }
 .modal__open-fill {
-  fill: var(--black-to-white);
+  fill: var(--grey-4-to-grey-3);
+}
+.modal__open-burger-fill {
+  stroke: var(--grey-4-to-grey-3);
 }
 .modal__open:hover {
   background-color: var(--primary-hover);

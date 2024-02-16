@@ -13,6 +13,12 @@
         z-index: 1;
     }
 
+    &__switch-theme_no-mobile {
+        @media (max-width: 768px) {
+            display: none;
+        }
+    }
+
     @media (max-width: 768px) {
         padding: 0 16px;
     }
