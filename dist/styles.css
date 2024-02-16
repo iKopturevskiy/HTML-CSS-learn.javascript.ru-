@@ -282,7 +282,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  background-color: var(--white);
+  background-color: var(--white-to-black);
   width: 100%;
   height: 100%;
 }
@@ -398,6 +398,11 @@
 }
 .navigation__line_component {
   background-color: var(--grey-2);
+}
+.navigation__switch-theme {
+  position: relative;
+  height: 30px;
+  padding: 16px 0;
 }
 
 .button {
@@ -707,6 +712,9 @@
   background-color: transparent;
   border: none;
 }
+.modal__open-fill {
+  fill: var(--black-to-white);
+}
 .modal__open:hover {
   background-color: var(--primary-hover);
 }
@@ -942,6 +950,11 @@
 }
 .toggle__state_icons {
   fill: var(--grey-4-to-grey-3);
+}
+.toggle__state_mobile {
+  left: 16px;
+  top: 50%;
+  transform: translate(0, -50%);
 }
 .toggle__control {
   width: 52px;

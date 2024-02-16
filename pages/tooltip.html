@@ -12,17 +12,36 @@
                 <div class="container container__mobile-menu">
                     <div class="aside__burger aside__burger_mobile-navigation">
                         <button id="modal-close-menu" class="modal__open_mobile-menu">
-                            <svg width="24" height="24">
+                            <svg width="24" height="24" class="modal__open-fill">
                                 <use href="../../assets/images/icons.svg#button_x"></use>
                             </svg>
                         </button>
                     </div>
                     <div class="header__logo">
                         <a href="../index.html">
-                            <svg width="110" height="32">
+                            <svg width="110" height="32" class="header__logo_element">
                                 <use href="../assets/images/icons.svg#rectangle"></use>
                             </svg>
                         </a>
+                    </div>
+                </div>
+                <div class="navigation__line"></div>
+                <div class="navigation__switch-theme">
+                    <div class="container__switch-theme  toggle__state_mobile">
+                        <label for="theme-changer" class="toggle">
+                            <input type="checkbox" id="theme-changer" class="toggle__input">
+                            <div class="toggle__state">
+                                <svg width="24" height="24" class="toggle__state_icons">
+                                    <use href="../assets/images/icons.svg#sun"></use>
+                                </svg>
+                                <div class="toggle__control">
+                                    <div class="toggle__point"></div>
+                                </div>
+                                <svg width="24" height="24" class="toggle__state_icons">
+                                    <use href="../assets/images/icons.svg#moon"></use>
+                                </svg>
+                            </div>
+                        </label>
                     </div>
                 </div>
                 <div class="navigation__line"></div>
@@ -43,25 +62,9 @@
             </div>
             <header class="header header_transparent-background">
                 <div class="container">
-                    <div class="container__switch-theme">
-                        <label for="theme-changer" class="toggle">
-                            <input type="checkbox" id="theme-changer" class="toggle__input">
-                            <div class="toggle__state">
-                                <svg width="24" height="24" class="toggle__state_icons">
-                                    <use href="../assets/images/icons.svg#sun"></use>
-                                </svg>
-                                <div class="toggle__control">
-                                    <div class="toggle__point"></div>
-                                </div>
-                                <svg width="24" height="24" class="toggle__state_icons">
-                                    <use href="../assets/images/icons.svg#moon"></use>
-                                </svg>
-                            </div>
-                        </label>
-                    </div>
                     <div class="aside__burger">
                         <button id="modal-open-menu" class="modal__open_mobile-menu">
-                            <svg width="24" height="24">
+                            <svg width="24" height="24" class="modal__open-fill">
                                 <use href="../assets/images/icons.svg#mobile-menu"></use>
                             </svg>
                         </button>

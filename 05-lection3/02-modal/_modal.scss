@@ -52,6 +52,10 @@
         border: none;
     }
 
+    &__open-fill {
+        fill: var(--black-to-white);
+    }
+
     &__open:hover {
         background-color: var(--primary-hover);
     }
