@@ -50,6 +50,7 @@
 
     --white-to-black: var(--white);
     --black-to-white: var(--black);
+    --black-to-grey-2: var(--black);
     --grey-4-to-grey-3: var(--grey-4);
     --grey-2-to-grey-3: var(--grey-2);
 }
@@ -58,6 +59,7 @@
 html[data-theme-dark] {
     --white-to-black: var(--black);
     --black-to-white: var(--white);
+    --black-to-grey-2: var(--grey-2);
     --grey-4-to-grey-3: var(--grey-3);
     --grey-2-to-grey-3: var(--grey-4);
 }

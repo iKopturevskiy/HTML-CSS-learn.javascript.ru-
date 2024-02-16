@@ -46,18 +46,17 @@
                         <label for="theme-changer" class="toggle">
                             <input type="checkbox" id="theme-changer" class="toggle__input">
                             <div class="toggle__state">
-                                <svg width="24" height="24">
+                                <svg width="24" height="24" class="toggle__state_icons">
                                     <use href="./assets/images/icons.svg#sun"></use>
                                 </svg>
                                 <div class="toggle__control">
                                     <div class="toggle__point"></div>
                                 </div>
-                                <svg width="24" height="24">
+                                <svg width="24" height="24" class="toggle__state_icons">
                                     <use href="./assets/images/icons.svg#moon"></use>
                                 </svg>
                             </div>
                         </label>
-
                     </div>
                     <div class="container_mobile">
                         <div class="aside__burger">
@@ -69,17 +68,8 @@
                         </div>
                         <div class="header__logo">
                             <a href="./index.html">
-                                <svg width="110" height="32" viewBox="0 0 110 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <g clip-path="url(#clip0_16746_155)">
-                                        <rect y="1" width="30" height="30" fill="#212429"/>
-                                        <rect x="38" width="32" height="32" rx="16" fill="#212429"/>
-                                        <path d="M78 0L110 32H78V0Z" fill="#212429"/>
-                                    </g>
-                                    <defs>
-                                        <clipPath id="clip0_16746_155">
-                                            <rect width="110" height="32" fill="white"/>
-                                        </clipPath>
-                                    </defs>
+                                <svg width="110" height="32" class="header__logo_element">
+                                    <use href="./assets/images/icons.svg#rectangle"></use>
                                 </svg>
                             </a>
                         </div>
@@ -841,6 +831,7 @@
                 </p>
             </footer>
         </div>
+        <script src="./05-lection3/02-modal/index.js"></script>
         <script src="./assets/js/index.js"></script>
     </body>
     <script src="./10-lection8/01-theme-changer/theme-changer.js"></script>

@@ -31,6 +31,10 @@
         }
     }
 
+    &__logo_element {
+        fill: var(--black-to-grey-2);
+    }
+
     &__logo path,
     &__logo rect {
         fill: var(--black-to-white);

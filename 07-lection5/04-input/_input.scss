@@ -25,7 +25,8 @@
 
     &__input {
         @include widthAndHeight(350px, 56px);
-        @include text(var(--grey-4), 20px, normal, 400, 26px);
+        @include text(var(--black-to-grey-2), 20px, normal, 400, 26px);
+        background-color: var(--white-to-black);
         padding-left: 24px;
         @include border(1px solid var(--grey-2), 8px, null);
 

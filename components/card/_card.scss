@@ -10,6 +10,7 @@
   display: flex;
   flex-direction: column;
   text-decoration: none;
+  color: var(--black-to-grey-2);
 
   &__body {
     display: flex;
@@ -24,7 +25,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: var(--black);
+    color: var(--black-to-grey-2);
     margin-top: 1.5rem;
   }
 
