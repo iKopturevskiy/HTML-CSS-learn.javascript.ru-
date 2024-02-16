@@ -43,6 +43,22 @@
         </div>
         <header class="header header_transparent-background">
             <div class="container">
+                <div class="container__switch-theme">
+                    <label for="theme-changer" class="toggle">
+                        <input type="checkbox" id="theme-changer" class="toggle__input">
+                        <div class="toggle__state">
+                            <svg width="24" height="24" class="toggle__state_icons">
+                                <use href="../assets/images/icons.svg#sun"></use>
+                            </svg>
+                            <div class="toggle__control">
+                                <div class="toggle__point"></div>
+                            </div>
+                            <svg width="24" height="24" class="toggle__state_icons">
+                                <use href="../assets/images/icons.svg#moon"></use>
+                            </svg>
+                        </div>
+                    </label>
+                </div>
                 <div class="aside__burger">
                     <button id="modal-open-menu" class="modal__open_mobile-menu">
                         <svg width="24" height="24">
@@ -52,7 +68,7 @@
                 </div>
                 <div class="header__logo">
                     <a href="../index.html">
-                        <svg width="110" height="32">
+                        <svg width="110" height="32" class="header__logo_element">
                             <use href="../assets/images/icons.svg#rectangle"></use>
                         </svg>
                     </a>
@@ -242,4 +258,5 @@
     </body>
     <script src="../05-lection3/02-modal/index.js"></script>
     <script src="../assets/js/index.js"></script>
+    <script src="../10-lection8/01-theme-changer/theme-changer.js"></script>
 </html>
