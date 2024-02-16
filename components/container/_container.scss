@@ -6,6 +6,19 @@
     padding: 0;
     position: relative;
 
+    &__switch-theme {
+        position: absolute;
+        right: 0;
+        top: 3px;
+        z-index: 1;
+    }
+
+    &__switch-theme_no-mobile {
+        @media (max-width: 768px) {
+            display: none;
+        }
+    }
+
     @media (max-width: 768px) {
         padding: 0 16px;
     }

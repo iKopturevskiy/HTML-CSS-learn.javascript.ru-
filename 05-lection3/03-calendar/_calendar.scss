@@ -11,7 +11,7 @@
     }
 
     &__title {
-        @include text(#334D6E, 20px, normal, 600, 24px);
+        @include text(var(--black-to-grey-2), 20px, normal, 600, 24px);
         margin-bottom: 24px;
         text-align: center;
     }

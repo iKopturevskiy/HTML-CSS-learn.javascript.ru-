@@ -1,12 +1,12 @@
 @import "../../assets/css/variables";
 
 .footer {
-    @include text(var(--black, #ACB5BD), null, normal, 500, 18px);
+    @include text(var(--black-to-white), null, normal, 500, 18px);
     padding: 5rem 0;
     letter-spacing: 0.48px;
     text-align: center;
-    max-width: 50%;
     margin: 0 auto;
+    background-color: var(--white-to-black);
 
     @media screen and (max-width: 768px) {
             display: none;
@@ -14,5 +14,10 @@
 
     &_transparent-background {
         background: var(--tranparent);
+    }
+
+    &__paragraph {
+        max-width: 50%;
+        margin: 0 auto;
     }
 }

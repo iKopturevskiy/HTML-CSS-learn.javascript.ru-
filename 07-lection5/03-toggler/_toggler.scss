@@ -15,6 +15,16 @@
         cursor: pointer;
     }
 
+    &__state_icons {
+        fill: var(--grey-4-to-grey-3);
+    }
+
+    &__state_mobile {
+        left: 16px;
+        top: 50%;
+        transform: translate(0, -50%);
+    }
+
     &__control {
         @include widthAndHeight(52px, 28px);
         @include border(1px solid var(--grey-3), 26px, null);

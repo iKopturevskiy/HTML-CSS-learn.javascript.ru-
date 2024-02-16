@@ -12,7 +12,7 @@
         max-width: 458px;
         border-radius: 8px;
         border: 1px solid var(--grey-3);
-        @include positionAndBackground(null, var(--white), absolute, 50%, 50%, null, null);
+        @include positionAndBackground(null, var(--white-to-black), absolute, 50%, 50%, null, null);
         transform: translate(-50%, -50%);
 
         @media (max-width: 768px) {
@@ -52,12 +52,21 @@
         border: none;
     }
 
+    &__open-fill {
+        fill: var(--grey-4-to-grey-3);
+    }
+
+    &__open-burger-fill {
+        stroke: var(--grey-4-to-grey-3);
+    }
+
     &__open:hover {
         background-color: var(--primary-hover);
     }
 
     &__close {
-        @include positionAndBackground(null, var(--white), absolute, 16px, null, null, 16px);
+        fill: var(--black-to-grey-2);
+        @include positionAndBackground(null, var(--white-to-black), absolute, 16px, null, null, 16px);
         padding: 0;
         border: 0;
     }
@@ -67,7 +76,7 @@
     }
 
     &__title {
-        @include text(#334D6E, 20px, normal, 600, 24px);
+        @include text(var(--black-to-grey-2), 20px, normal, 600, 24px);
     }
 
     &__title_main-page {
@@ -75,6 +84,6 @@
     }
 
     &__text {
-        @include text(var(--grey-4), 16px, normal, 400, 24px);
+        @include text(var(--grey-4-to-grey-3), 16px, normal, 400, 24px);
     }
 }

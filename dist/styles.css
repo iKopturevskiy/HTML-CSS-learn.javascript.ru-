@@ -11,7 +11,7 @@
   }
 }
 .page__component {
-  background-color: var(--grey-2);
+  background-color: var(--grey-2-to-grey-3);
   padding: 0 16px 16px 16px;
 }
 .page__main {
@@ -30,7 +30,7 @@
 }
 
 .header {
-  background: var(--white);
+  background-color: var(--white-to-black);
   padding-top: 24px;
 }
 @media screen and (max-width: 768px) {
@@ -39,10 +39,10 @@
   }
 }
 .header__title {
-  color: var(--grey-4, #495057);
+  color: var(--grey-4-to-grey-3);
   font-size: 1.75rem;
   font-style: normal;
-  font-weight: 400;
+  font-weight: bold;
   line-height: 2.375rem;
 }
 @media screen and (max-width: 768px) {
@@ -63,17 +63,23 @@
     justify-content: center;
   }
 }
+.header__logo_element {
+  fill: var(--black-to-grey-2);
+}
+.header__logo path, .header__logo rect {
+  fill: var(--black-to-white);
+}
 
 .footer {
-  color: var(--black, #ACB5BD);
+  color: var(--black-to-white);
   font-style: normal;
   font-weight: 500;
   line-height: 18px;
   padding: 5rem 0;
   letter-spacing: 0.48px;
   text-align: center;
-  max-width: 50%;
   margin: 0 auto;
+  background-color: var(--white-to-black);
 }
 @media screen and (max-width: 768px) {
   .footer {
@@ -82,6 +88,10 @@
 }
 .footer_transparent-background {
   background: var(--tranparent);
+}
+.footer__paragraph {
+  max-width: 50%;
+  margin: 0 auto;
 }
 
 .preview__cards {
@@ -114,6 +124,17 @@
   margin: 0 auto;
   padding: 0;
   position: relative;
+}
+.container__switch-theme {
+  position: absolute;
+  right: 0;
+  top: 3px;
+  z-index: 1;
+}
+@media (max-width: 768px) {
+  .container__switch-theme_no-mobile {
+    display: none;
+  }
 }
 @media (max-width: 768px) {
   .container {
@@ -166,11 +187,12 @@
   box-sizing: border-box;
   border-radius: 8px;
   box-shadow: 0 2px 4px 0 rgba(33, 36, 41, 0.05);
-  background: white;
+  background-color: var(--white-to-black);
   padding: 2rem;
   display: flex;
   flex-direction: column;
   text-decoration: none;
+  color: var(--black-to-grey-2);
 }
 .card__body {
   display: flex;
@@ -184,7 +206,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: var(--black);
+  color: var(--black-to-grey-2);
   margin-top: 1.5rem;
 }
 .card__footer_tooltip {
@@ -225,6 +247,7 @@
   display: grid;
   grid-template-rows: repeat(7, auto);
   gap: 4px;
+  color: var(--black-to-grey-2);
 }
 .aside__link {
   text-decoration: none;
@@ -264,7 +287,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  background-color: var(--white);
+  background-color: var(--white-to-black);
   width: 100%;
   height: 100%;
 }
@@ -273,10 +296,12 @@
   display: flex;
   flex-direction: column;
   gap: 24px;
-  background: var(--white);
+  background: var(--white-to-black);
+  color: var(--black-to-grey-2);
   padding: 32px 48px;
   border-radius: 8px;
   max-width: 800px;
+  margin-top: 16px;
 }
 @media screen and (max-width: 768px) {
   .info {
@@ -302,6 +327,9 @@
   overflow-x: auto;
 }
 
+.navigation__container {
+  background-color: var(--white-to-black);
+}
 .navigation__list {
   color: var(--grey-3);
   font-size: 16px;
@@ -312,8 +340,7 @@
   list-style-type: none;
   gap: 40px;
   padding-inline-start: 0;
-  padding: 10px 100px;
-  background-color: var(--white);
+  padding: 10px 0;
 }
 @media (max-width: 768px) {
   .navigation__list {
@@ -333,23 +360,23 @@
   height: 5px;
   width: 100%;
   top: 100%;
-  background-color: var(--black);
+  background-color: var(--black-to-white);
   transform: scaleX(0);
   transition: transform 250ms ease-in-out;
 }
 .navigation__line {
   height: 1px;
-  background-color: var(--grey-3);
+  background-color: var(--grey-4-to-grey-3);
 }
 .navigation__list label {
   cursor: pointer;
 }
 .navigation__pages {
   padding: 48px 0;
-  background-color: var(--grey-2);
+  background-color: var(--grey-2-to-grey-3);
 }
 .navigation__pages_components {
-  background-color: var(--white);
+  background-color: var(--white-to-black);
 }
 .navigation__page {
   display: none;
@@ -369,13 +396,18 @@
   transform: scaleX(1);
 }
 #nav1:checked ~ nav .navigation__list .navigation__point-1, #nav2:checked ~ nav .navigation__list .navigation__point-2, #nav3:checked ~ nav .navigation__list .navigation__point-3, #nav4:checked ~ nav .navigation__list .navigation__point-4, .navigation__point:hover {
-  color: var(--black);
+  color: var(--black-to-white);
 }
 .navigation_component {
   padding: 10px 0;
 }
 .navigation__line_component {
   background-color: var(--grey-2);
+}
+.navigation__switch-theme {
+  position: relative;
+  height: 30px;
+  padding: 16px 0;
 }
 
 .button {
@@ -428,6 +460,7 @@
 .button_title {
   border: none;
   background-color: transparent;
+  color: var(--black-to-grey-2);
 }
 .button_secondary {
   background: var(--secondary);
@@ -462,7 +495,8 @@
   border-radius: 8px;
   padding: 24px 32px;
   margin-bottom: 8px;
-  background-color: var(--white);
+  background-color: var(--white-to-black);
+  color: var(--black-to-grey-2);
 }
 .accordion__item[open] .accordion__vector {
   transform: rotateX(180deg);
@@ -481,7 +515,7 @@
   margin-bottom: 0;
 }
 .accordion__content {
-  color: var(--grey-4, #495057);
+  color: var(--grey-4-to-grey-3);
   padding-bottom: 32px;
 }
 
@@ -535,6 +569,9 @@
   font-weight: 400;
   line-height: 24px;
 }
+.histogram__total-orders {
+  color: var(--black-to-grey-2);
+}
 .histogram__title {
   opacity: 0.8;
 }
@@ -579,6 +616,9 @@
 .tooltip {
   display: inline-flex;
   position: relative;
+}
+.tooltip__trigger {
+  fill: var(--black-to-grey-2);
 }
 .tooltip__bubble {
   white-space: nowrap;
@@ -634,7 +674,7 @@
   max-width: 458px;
   border-radius: 8px;
   border: 1px solid var(--grey-3);
-  background: var(--white);
+  background: var(--white-to-black);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -677,11 +717,18 @@
   background-color: transparent;
   border: none;
 }
+.modal__open-fill {
+  fill: var(--grey-4-to-grey-3);
+}
+.modal__open-burger-fill {
+  stroke: var(--grey-4-to-grey-3);
+}
 .modal__open:hover {
   background-color: var(--primary-hover);
 }
 .modal__close {
-  background: var(--white);
+  fill: var(--black-to-grey-2);
+  background: var(--white-to-black);
   position: absolute;
   top: 16px;
   right: 16px;
@@ -692,7 +739,7 @@
   cursor: pointer;
 }
 .modal__title {
-  color: #334D6E;
+  color: var(--black-to-grey-2);
   font-size: 20px;
   font-style: normal;
   font-weight: 600;
@@ -702,7 +749,7 @@
   margin-top: 0;
 }
 .modal__text {
-  color: var(--grey-4);
+  color: var(--grey-4-to-grey-3);
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -722,7 +769,7 @@
   }
 }
 .calendar__title {
-  color: #334D6E;
+  color: var(--black-to-grey-2);
   font-size: 20px;
   font-style: normal;
   font-weight: 600;
@@ -815,7 +862,7 @@
   box-sizing: border-box;
 }
 .checkbox__title {
-  color: var(--grey-4);
+  color: var(--black-to-grey-2);
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -874,7 +921,7 @@
   visibility: hidden;
 }
 .radio__title {
-  color: var(--grey-4);
+  color: var(--black-to-grey-2);
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -908,6 +955,14 @@
   align-items: center;
   gap: 12px;
   cursor: pointer;
+}
+.toggle__state_icons {
+  fill: var(--grey-4-to-grey-3);
+}
+.toggle__state_mobile {
+  left: 16px;
+  top: 50%;
+  transform: translate(0, -50%);
 }
 .toggle__control {
   width: 52px;
@@ -975,11 +1030,12 @@
 .form__input {
   width: 350px;
   height: 56px;
-  color: var(--grey-4);
+  color: var(--black-to-grey-2);
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: 26px;
+  background-color: var(--white-to-black);
   padding-left: 24px;
   border: 1px solid var(--grey-2);
   border-radius: 8px;
@@ -1082,6 +1138,19 @@
   --primary: var(--blue);
   --secondary: var(--purple);
   --transition: opacity 200ms ease-in-out, background 200ms ease-in-out, border 200ms ease-in-out;
+  --white-to-black: var(--white);
+  --black-to-white: var(--black);
+  --black-to-grey-2: var(--black);
+  --grey-4-to-grey-3: var(--grey-4);
+  --grey-2-to-grey-3: var(--grey-2);
+}
+
+html[data-theme-dark] {
+  --white-to-black: var(--black);
+  --black-to-white: var(--white);
+  --black-to-grey-2: var(--grey-2);
+  --grey-4-to-grey-3: var(--grey-3);
+  --grey-2-to-grey-3: var(--grey-4);
 }
 
 html, body {

@@ -5,7 +5,9 @@
     @include text(var(--black), 16px, normal, 400, 24px);
     &__top {
     }
-    &__total-orders {}
+    &__total-orders {
+        color: var(--black-to-grey-2);
+    }
     &__title {
         opacity: 0.8;
     }

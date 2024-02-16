@@ -4,7 +4,9 @@
     display: inline-flex;
     position: relative;
 
-    &__trigger{}
+    &__trigger{
+        fill: var(--black-to-grey-2);
+    }
     &__bubble {
         white-space: nowrap;
         border-radius: 10px;
